@@ -18,9 +18,9 @@ import { Label } from "./ui/label";
 const ContactFormSection = () => {
   const form = useForm();
   return (
-    <section className="bg-[#F6F7FA] h-screen w-screen flex">
-      <div className="w-1/2 flex flex-col h-full items-center justify-center">
-        <div className="w-3/4 h-3/4 space-y-6 px-10 ">
+    <section className="bg-[#F6F7FA] w-screen flex flex-wrap lg:flex-nowrap">
+      <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
+        <div className="w-3/4 space-y-6 pt-20 md:py-10 lg:px-10 ">
           <h4 className="text-blue-700 font-medium">
             Tell us about your project
           </h4>
@@ -91,53 +91,61 @@ const ContactFormSection = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/2 flex flex-col items-center justify-center">
-        <div className="h-3/4 w-5/6">
+      <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
+        <div className="w-5/6 py-28">
           <div className="bg-white p-11 shadow-xl rounded-xl">
             <Form {...form}>
               <FormField
                 control={form.control}
                 name="username"
                 render={({ field }) => (
-                  <FormItem>
+                  <FormItem className="space-y-3">
                     <div className="flex space-x-5">
-                      <div>
+                      <div className="flex-1">
                         <FormLabel>First name</FormLabel>
-                        <FormControl>
+                        <FormControl className="mt-1">
                           <Input {...field} />
                         </FormControl>
                       </div>
-                      <div>
+                      <div className="flex-1">
                         <FormLabel>Last name</FormLabel>
-                        <FormControl>
+                        <FormControl className="mt-1">
                           <Input {...field} />
                         </FormControl>
                       </div>
                     </div>
-                    <FormLabel>Company name</FormLabel>
-                    <FormControl>
-                      <Input {...field} />
-                    </FormControl>
-                    <FormLabel>Business email</FormLabel>
-                    <FormControl>
-                      <Input {...field} type="email" />
-                    </FormControl>
-                    <FormLabel>Phone number</FormLabel>
-                    <div className="flex space-x-4">
-                      <FormControl className="w-1/2">
-                        <Input {...field} type="email" />
+                    <div>
+                      <FormLabel>Company name</FormLabel>
+                      <FormControl className="mt-1">
+                        <Input {...field} />
                       </FormControl>
-                      <FormControl className="">
+                    </div>
+                    <div>
+                      <FormLabel>Business email</FormLabel>
+                      <FormControl className="mt-1">
                         <Input {...field} type="email" />
                       </FormControl>
                     </div>
-                    <FormLabel>How can we help?</FormLabel>
-                    <FormDescription>
-                      Please share any relevant details
-                    </FormDescription>
-                    <FormControl>
-                      <Textarea {...field} />
-                    </FormControl>
+                    <div>
+                      <FormLabel>Phone number</FormLabel>
+                      <div className="flex space-x-4">
+                        <FormControl className="w-1/2 mt-1">
+                          <Input {...field} type="email" />
+                        </FormControl>
+                        <FormControl className="">
+                          <Input {...field} type="email" />
+                        </FormControl>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <FormLabel>How can we help?</FormLabel>
+                      <FormDescription className="text-xs">
+                        Please share any relevant details
+                      </FormDescription>
+                      <FormControl className="mt-1">
+                        <Textarea {...field} />
+                      </FormControl>
+                    </div>
                     <Button className="w-full bg-blue-700">Submit</Button>
                     <FormMessage />
                   </FormItem>
