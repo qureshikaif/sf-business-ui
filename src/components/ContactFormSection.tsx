@@ -20,7 +20,7 @@ const ContactFormSection = () => {
   return (
     <section className="bg-[#F6F7FA] h-screen w-screen flex">
       <div className="w-1/2 flex flex-col h-full items-center justify-center">
-        <div className="w-3/4 h-3/4 space-y-6">
+        <div className="w-3/4 h-3/4 space-y-6 px-10 ">
           <h4 className="text-blue-700 font-medium">
             Tell us about your project
           </h4>
@@ -92,8 +92,8 @@ const ContactFormSection = () => {
         </div>
       </div>
       <div className="w-1/2 flex flex-col items-center justify-center">
-        <div className="h-3/4">
-          <div className="bg-white p-11">
+        <div className="h-3/4 w-5/6">
+          <div className="bg-white p-11 shadow-xl rounded-xl">
             <Form {...form}>
               <FormField
                 control={form.control}
