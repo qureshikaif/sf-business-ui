@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import ContactFormSection from "@/components/ContactFormSection";
 import OurOffices from "@/components/OurOffices";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 const Contact = () => {
   const form = useForm();
@@ -12,7 +13,6 @@ const Contact = () => {
       <ContactHero />
       <ContactFormSection />
       <OurOffices />
-      <Footer />
     </div>
   );
 };
