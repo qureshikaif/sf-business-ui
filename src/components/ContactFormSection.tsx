@@ -146,7 +146,7 @@ const ContactFormSection = () => {
                         <Textarea {...field} />
                       </FormControl>
                     </div>
-                    <Button className="w-full bg-blue-700">Submit</Button>
+                    <Button className="w-full bg-blue-700 py-6">Submit</Button>
                     <FormMessage />
                   </FormItem>
                 )}
