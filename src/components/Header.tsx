@@ -55,7 +55,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 const Header = () => {
   return (
-    <NavigationMenu className="overflow-hidden">
+    <NavigationMenu className="overflow-hidden h-16 p-5 shadow-md fixed bg-white">
       <NavigationMenuList className="w-screen justify-evenly">
         <NavigationMenuItem>
           <Link href={"/services"}>Services</Link>
