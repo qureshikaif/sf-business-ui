@@ -63,6 +63,9 @@ const Header = () => {
         <NavigationMenuItem>
           <Link href={"/contact"}>Contact Us</Link>
         </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href={"/about"}>About Us</Link>
+        </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
   );

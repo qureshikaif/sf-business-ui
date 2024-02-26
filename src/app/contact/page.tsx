@@ -1,10 +1,8 @@
 "use client";
-import ContactHero from "@/components/ContactHero";
 import { useForm } from "react-hook-form";
+import ContactHero from "@/components/ContactHero";
 import ContactFormSection from "@/components/ContactFormSection";
 import OurOffices from "@/components/OurOffices";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 
 const Contact = () => {
   const form = useForm();
