@@ -55,19 +55,18 @@ const components: { title: string; href: string; description: string }[] = [
 
 const Header = () => {
   return (
-    <NavigationMenu className="overflow-hidden h-16 p-5 shadow-md fixed bg-white">
-      <NavigationMenuList className="w-screen justify-evenly">
-        <NavigationMenuItem>
-          <Link href={"/services"}>Services</Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href={"/contact"}>Contact Us</Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href={"/about"}>About Us</Link>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
+    <header className="shadow-md w-full h-20 flex justify-center p-5 items-center overflow-hidden fixed z-50 bg-white">
+      <div className="w-5/6 flex items-center justify-between">
+        <h1 className="font-bold text-2xl text-blue-800 basis-1/4">
+          SF Business Solutions
+        </h1>
+        <nav className="flex basis-1/2 justify-between">
+          <Link href="/about">About Us</Link>
+          <Link href="/contact">Contact Us</Link>
+          <Link href="/services">Services</Link>
+        </nav>
+      </div>
+    </header>
   );
 };
 

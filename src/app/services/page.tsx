@@ -103,8 +103,8 @@ const services = [
 
 const Services = () => {
   return (
-    <section>
-      <div className="bg-blue-600 w-full h-64 flex flex-col items-center justify-center space-y-6 ">
+    <section className="pt-20">
+      <div className="bg-blue-600 w-full h-64 flex flex-col items-center justify-center space-y-6">
         <h1 className="text-white font-bold text-6xl">Services</h1>
         <h3 className="text-white font-bold text-xl">
           Let&apos;s connect with us
@@ -114,7 +114,7 @@ const Services = () => {
         <div className="grid grid-cols-3 gap-3">
           {services.map((service) => (
             <Link href={"/"} key={service.id}>
-              <Card className="group w-[350px] hover:bg-blue-500">
+              <Card className="transform group w-[350px] hover:bg-blue-500 transition-all duration-100 ease-in-out">
                 <CardHeader>
                   <CardTitle className="group-hover:text-white">
                     {service.title}

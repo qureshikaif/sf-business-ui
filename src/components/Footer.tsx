@@ -2,6 +2,8 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
+import Image from "next/image";
+import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
   return (
@@ -78,12 +80,31 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center w-full text-white">
           <h1>© SF Business Solutions. All rights reserved.</h1>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <h1>Links</h1>
-            <h1>Links</h1>
-            <h1>Links</h1>
-            <h1>Links</h1>
-            <h1>Links</h1>
-            <h1>Links</h1>
+            <SocialIcon
+              url="https://facebook.com"
+              bgColor="transparent"
+              className="border-white border rounded-full hover:bg-blue-600"
+            />
+            <SocialIcon
+              url="https://instagram.com"
+              bgColor="transparent"
+              className="border-white border rounded-full hover:bg-pink-800"
+            />
+            <SocialIcon
+              url="https://behance.com"
+              bgColor="transparent"
+              className="border-white border rounded-full hover:bg-blue-300"
+            />
+            <SocialIcon
+              url="https://linkedin.com"
+              bgColor="transparent"
+              className="border-white border rounded-full hover:bg-blue-900"
+            />
+            <SocialIcon
+              url="https://twitter.com"
+              bgColor="transparent"
+              className="border-white border rounded-full hover:bg-blue-400"
+            />
           </div>
         </div>
       </div>
