@@ -13,7 +13,7 @@ import { Button } from "./ui/button";
 
 const JoinUs = () => {
   return (
-    <section className="h-[120vh] overflow-hidden flex flex-col items-center justify-center">
+    <section className="h-[110vh] overflow-hidden flex flex-col items-center justify-center">
       <div className="w-10/12 p-5 h-3/4">
         <div className="flex flex-col space-y-3">
           <h1 className="font-bold text-blue-600">Join us</h1>

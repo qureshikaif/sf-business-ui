@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Four from "../../public/images/four.jpg";
 import { Button } from "./ui/button";
+import { Parallax } from "react-scroll-parallax";
 
 const MeetUs = () => {
   return (
     <section className="bg-blue-700 h-screen overflow-hidden flex flex-col items-center justify-center relative">
-      <div className="h-[25rem] w-[25rem] rounded-full shadow-inner shadow-blue-300 absolute -top-24 -right-24 bg-blue-500 overflow-hidden"></div>
+      {/* <Parallax className="parallax" speed={-10}>
+        <div className="h-[25rem] w-[25rem] rounded-full shadow-inner shadow-blue-300 absolute -top-24 -right-24 bg-blue-600 overflow-hidden"></div>
+      </Parallax> */}
+      <div className="h-[25rem] w-[25rem] rounded-full shadow-inner shadow-blue-300 absolute -top-24 -right-24 bg-blue-600 overflow-hidden"></div>
       <div className=" w-10/12">
         <div className="flex flex-col space-y-3 my-14">
           <h1 className="font-medium text-white text-3xl">Meet Our Team</h1>

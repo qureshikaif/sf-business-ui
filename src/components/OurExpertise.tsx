@@ -6,7 +6,7 @@ import { ExpertiseCard } from "@/placeholders/ExpertiseCard";
 const OurExpertise = () => {
   return (
     <section className="bg-blue-700 min-h-screen overflow-hidden flex flex-col items-center justify-center relative">
-      <div className="h-[25rem] w-[25rem] rounded-full shadow-inner shadow-blue-300 absolute -top-24 -right-24 bg-blue-500 overflow-hidden"></div>
+      <div className="h-[25rem] w-[25rem] rounded-full shadow-inner shadow-blue-300 absolute -top-24 -right-24 bg-blue-600 overflow-hidden"></div>
       <div className="w-10/12 p-5">
         <div className="flex flex-col space-y-3">
           <h1 className="font-bold text-blue-200">Our Area Of Expertise</h1>
