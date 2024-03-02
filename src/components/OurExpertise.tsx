@@ -2,12 +2,22 @@ import React from "react";
 import { ShoppingCart } from "lucide-react";
 import { Card, CardHeader, CardContent, CardTitle } from "./ui/card";
 import { ExpertiseCard } from "@/placeholders/ExpertiseCard";
+import { Parallax } from "react-scroll-parallax";
 
 const OurExpertise = () => {
   return (
     <section className="bg-blue-700 min-h-screen overflow-hidden flex flex-col items-center justify-center relative">
-      <div className="h-[25rem] w-[25rem] rounded-full shadow-inner shadow-blue-300 absolute -top-24 -right-24 bg-blue-600 overflow-hidden"></div>
-      <div className="w-10/12 p-5">
+      <Parallax
+        className="absolute -top-24 -right-24"
+        speed={-20}
+        translate="yes"
+        translateX={[-50, 50]}
+        scale={[1, 1, "easeInQuad"]}
+      >
+        <div className="h-[25rem] w-[25rem] rounded-full shadow-inner shadow-blue-300  bg-blue-600 overflow-hidden"></div>
+      </Parallax>
+
+      <div className="w-10/12 p-5 z-10">
         <div className="flex flex-col space-y-3">
           <h1 className="font-bold text-blue-200">Our Area Of Expertise</h1>
           <p className="text-3xl text-white font-semibold">
