@@ -10,7 +10,7 @@ import {
 
 const AtGlance = () => {
   return (
-    <section className="h-[120vh] overflow-hidden flex flex-col items-center justify-center">
+    <section className="h-[120vh] pt-20 lg:pt-0 overflow-hidden flex flex-col items-center justify-center">
       <div className="w-10/12 p-5">
         <div className="flex flex-col space-y-3">
           <h1 className="font-medium text-3xl text-blue-800">

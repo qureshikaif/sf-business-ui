@@ -11,8 +11,8 @@ import { WhyUsCard } from "@/placeholders/WhyUsCard";
 
 const WhyUs = () => {
   return (
-    <section className="bg-white h-[130vh] overflow-hidden flex flex-col items-center justify-center">
-      <div className="w-10/12 px-5 py-12">
+    <section className="bg-white lg:h-[120vh] overflow-hidden flex flex-col items-center justify-center">
+      <div className="lg:w-10/12 px-5 py-12">
         <div className="flex flex-col space-y-3">
           <h1 className="font-bold text-blue-600">Why Us</h1>
           <p className="text-3xl font-semibold">
@@ -20,7 +20,7 @@ const WhyUs = () => {
           </p>
         </div>
         <div className="h-16"></div>
-        <div className="grid grid-cols-3 gap-7">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-7">
           {WhyUsCard.map((card, index) => (
             <Card
               key={index}

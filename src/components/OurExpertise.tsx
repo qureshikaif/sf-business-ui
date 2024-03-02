@@ -31,7 +31,7 @@ const OurExpertise = () => {
           </p>
         </div>
         <div className="h-20"></div>
-        <div className="grid grid-cols-3 gap-x-5 gap-y-8">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-x-5 lg:gap-y-8 md:gap-y-6 gap-y-5">
           {ExpertiseCard.map((card, index) => (
             <Card
               key={index}
