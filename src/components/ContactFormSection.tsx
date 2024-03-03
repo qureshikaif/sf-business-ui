@@ -95,62 +95,89 @@ const ContactFormSection = () => {
         <div className="w-5/6 py-28">
           <div className="bg-white p-11 shadow-xl rounded-xl">
             <Form {...form}>
-              <FormField
-                control={form.control}
-                name="username"
-                render={({ field }) => (
-                  <FormItem className="space-y-3">
-                    <div className="flex space-x-5">
+              <div className="space-y-3">
+                <div className="flex space-x-5">
+                  <FormField
+                    name="firstName"
+                    control={form.control}
+                    render={({ field: firstName }) => (
                       <div className="flex-1">
                         <FormLabel>First name</FormLabel>
                         <FormControl className="mt-1">
-                          <Input {...field} />
+                          <Input {...firstName} />
                         </FormControl>
                       </div>
+                    )}
+                  />
+                  <FormField
+                    name="lastName"
+                    control={form.control}
+                    render={({ field: lastName }) => (
                       <div className="flex-1">
                         <FormLabel>Last name</FormLabel>
                         <FormControl className="mt-1">
-                          <Input {...field} />
+                          <Input {...lastName} />
                         </FormControl>
                       </div>
-                    </div>
+                    )}
+                  />
+                </div>
+                <FormField
+                  name="companyName"
+                  control={form.control}
+                  render={({ field: companyName }) => (
                     <div>
                       <FormLabel>Company name</FormLabel>
                       <FormControl className="mt-1">
-                        <Input {...field} />
+                        <Input {...companyName} />
                       </FormControl>
                     </div>
+                  )}
+                />
+                <FormField
+                  name="businessEmail"
+                  control={form.control}
+                  render={({ field: businessEmail }) => (
                     <div>
                       <FormLabel>Business email</FormLabel>
                       <FormControl className="mt-1">
-                        <Input {...field} type="email" />
+                        <Input {...businessEmail} type="email" />
                       </FormControl>
                     </div>
+                  )}
+                />
+                <FormField
+                  name="phoneNumber"
+                  control={form.control}
+                  render={({ field: phoneNumber }) => (
                     <div>
                       <FormLabel>Phone number</FormLabel>
                       <div className="flex space-x-4">
                         <FormControl className="w-1/2 mt-1">
-                          <Input {...field} type="email" />
-                        </FormControl>
-                        <FormControl className="">
-                          <Input {...field} type="email" />
+                          <Input {...phoneNumber} type="tel" />
                         </FormControl>
                       </div>
                     </div>
+                  )}
+                />
+                <FormField
+                  name="helpDescription"
+                  control={form.control}
+                  render={({ field: helpDescription }) => (
                     <div className="space-y-2">
                       <FormLabel>How can we help?</FormLabel>
                       <FormDescription className="text-xs">
                         Please share any relevant details
                       </FormDescription>
                       <FormControl className="mt-1">
-                        <Textarea {...field} />
+                        <Textarea {...helpDescription} />
                       </FormControl>
                     </div>
-                    <Button className="w-full bg-blue-700 py-6">Submit</Button>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+                  )}
+                />
+                <Button className="w-full bg-blue-700 py-6">Submit</Button>
+                <FormMessage />
+              </div>
             </Form>
           </div>
         </div>

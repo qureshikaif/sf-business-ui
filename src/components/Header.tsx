@@ -1,5 +1,4 @@
 "use client";
-import { useState, useEffect } from "react";
 import Link from "next/link";
 import Logo from "../../public/logo.svg";
 import Image from "next/image";
@@ -10,7 +9,7 @@ const Header = () => {
 
   return (
     <header
-      className={`shadow-md w-full h-20 flex justify-center p-5 items-center overflow-hidden fixed z-50 bg-white transition-transform duration-200 ease-in-out ${
+      className={`shadow-md fixed w-full h-20 flex justify-center p-5 items-center overflow-hidden z-50 bg-white transition-transform duration-200 ease-in-out ${
         showNav ? "" : "-translate-y-full"
       }`}
     >
