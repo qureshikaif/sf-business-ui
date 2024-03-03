@@ -13,8 +13,8 @@ import { Button } from "./ui/button";
 
 const JoinUs = () => {
   return (
-    <section className="h-[110vh] overflow-hidden flex flex-col items-center justify-center">
-      <div className="w-10/12 p-5 h-3/4">
+    <section className="overflow-hidden flex flex-col items-center justify-center py-10 lg:min-h-[110vh]">
+      <div className="lg:w-10/12 w-11/12 px-2 py-5 h-3/4">
         <div className="flex flex-col space-y-3">
           <h1 className="font-bold text-blue-600">Join us</h1>
           <p className="text-3xl font-semibold">
@@ -25,7 +25,7 @@ const JoinUs = () => {
             Together, we’ll create a culture of equality, inclusivity and
             growth, while solving some of the world’s biggest challenges .
           </p>
-          <Button className="bg-blue-600 w-1/6 text-white">
+          <Button className="bg-blue-600 w-[200px] text-white">
             See all open positions
           </Button>
         </div>

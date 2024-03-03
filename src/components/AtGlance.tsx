@@ -11,7 +11,7 @@ import {
 const AtGlance = () => {
   return (
     <section className="h-[120vh] pt-20 lg:pt-0 overflow-hidden flex flex-col items-center justify-center">
-      <div className="w-10/12 p-5">
+      <div className="w-11/12 lg:w-10/12 px-2">
         <div className="flex flex-col space-y-3">
           <h1 className="font-medium text-3xl text-blue-800">
             SF Business at glance.
@@ -24,7 +24,7 @@ const AtGlance = () => {
           </p>
         </div>
         <div className="h-20"></div>
-        <div>
+        <div className="flex items-center justify-center">
           <Carousel
             opts={{
               align: "start",
@@ -46,8 +46,8 @@ const AtGlance = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="hidden lg:block" />
+            <CarouselNext className="hidden lg:block" />
           </Carousel>
         </div>
       </div>

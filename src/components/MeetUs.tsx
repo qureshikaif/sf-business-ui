@@ -33,7 +33,7 @@ const MeetUs = () => {
         <div className="h-[25rem] w-[25rem] rounded-full shadow-inner shadow-blue-300  bg-blue-600 overflow-hidden"></div>
       </Parallax>
 
-      <div className="w-10/12 z-10">
+      <div className="lg:w-10/12 w-11/12 px-2 z-10">
         <div className="flex flex-col space-y-3 my-14">
           <h1 className="font-medium text-white text-3xl">Meet Our Team</h1>
           <p className="text-lg text-white z-10">

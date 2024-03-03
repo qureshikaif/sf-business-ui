@@ -13,14 +13,14 @@ import Image from "next/image";
 const OurCommitments = () => {
   return (
     <section className="h-screen overflow-hidden flex flex-col items-center justify-center">
-      <div className="w-10/12 p-5 h-3/4">
+      <div className="lg:w-10/12 w-11/12 px-2 py-5 h-3/4">
         <div className="flex flex-col space-y-3">
           <h1 className="font-bold text-blue-600">Our Commitments</h1>
           <p className="text-3xl font-semibold">
             Initiatives that help communities thrive
           </p>
         </div>
-        <div className="h-20"></div>
+        <div className="lg:h-20 h-14"></div>
         <Carousel
           opts={{
             align: "start",
@@ -30,7 +30,7 @@ const OurCommitments = () => {
           <CarouselContent>
             {Array.from({ length: 7 }).map((_, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <div className="pr-10">
+                <div className="">
                   <Card className="border-none">
                     <CardContent className="p-0 flex flex-col space-y-3">
                       <Image
