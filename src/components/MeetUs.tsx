@@ -10,7 +10,8 @@ const MeetUs = () => {
         className="absolute -top-24 -right-24"
         speed={-20}
         translate="yes"
-        translateX={[-50, 50]}
+        translateX={[-50, 0]}
+        translateY={[50, 0]}
         scale={[1, 1, "easeInQuad"]}
       >
         <div className="h-[25rem] w-[25rem] rounded-full shadow-inner shadow-blue-300  bg-blue-600 overflow-hidden"></div>
