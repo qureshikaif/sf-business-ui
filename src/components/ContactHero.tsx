@@ -1,7 +1,4 @@
-import React from "react";
 import { Button } from "./ui/button";
-import Image from "next/image";
-import Four from "../../public/images/four.jpg";
 
 const ContactHero = () => {
   return (

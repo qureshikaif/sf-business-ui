@@ -104,8 +104,8 @@ const services = [
 const Services = () => {
   return (
     <section className="pt-20">
-      <div className="bg-blue-600 w-full lg:h-64 md:h-64 h-44 flex flex-col items-center justify-center space-y-6">
-        <h1 className="text-white font-bold lg:text-6xl md:text-4xl text-2xl">
+      <div className="bg-blue-600 w-full lg:h-64 md:h-64 h-44 flex flex-col items-center justify-center lg:space-y-6 space-y-2">
+        <h1 className="text-white font-bold lg:text-6xl md:text-4xl text-4xl">
           Services
         </h1>
         <h3 className="text-white font-bold text-xl">

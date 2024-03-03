@@ -20,7 +20,7 @@ const ContactFormSection = () => {
   return (
     <section className="bg-[#F6F7FA] w-screen flex flex-wrap lg:flex-nowrap">
       <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-        <div className="w-3/4 space-y-6 pt-20 md:py-10 lg:px-10 ">
+        <div className="w-11/12 px-2 lg:w-3/4 space-y-6 pt-20 md:py-10 lg:px-10 ">
           <h4 className="text-blue-700 font-medium">
             Tell us about your project
           </h4>
@@ -92,7 +92,7 @@ const ContactFormSection = () => {
         </div>
       </div>
       <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-        <div className="w-5/6 py-28">
+        <div className="lg:w-5/6 w-11/12 px-2 py-28">
           <div className="bg-white p-11 shadow-xl rounded-xl">
             <Form {...form}>
               <div className="space-y-3">
