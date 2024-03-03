@@ -33,6 +33,9 @@ const Header = () => {
           <Link href="/services" className="hover:text-blue-800">
             Services
           </Link>
+          <Link href="/clients" className="hover:text-blue-800">
+            Who we serve
+          </Link>
         </nav>
       </div>
     </header>
