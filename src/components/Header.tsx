@@ -23,7 +23,7 @@ const Header = () => {
             />
           </Link>
         </div>
-        <nav className="flex basis-1/2 justify-between">
+        <nav className="flex basis-1/2 justify-between md:flex-row flex-col">
           <Link href="/about" className="hover:text-blue-800">
             About Us
           </Link>

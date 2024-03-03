@@ -44,12 +44,12 @@ const MeetUs = () => {
         </div>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5">
           {meetus.map((member, index) => (
-            <div key={index} className="flex flex-col items-center space-y-4">
+            <div key={index} className="flex flex-col space-y-4">
               <div className="relative group">
                 <Image
                   src={member.image}
                   alt={member.name}
-                  className="aspect-square rounded-lg object-cover"
+                  className="aspect-square rounded-lg object-cover w-full"
                 />
                 <Link href={member.linkedin}>
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -60,10 +60,10 @@ const MeetUs = () => {
                   </div>
                 </Link>
               </div>
-              <h1 className="text-white text-lg font-semibold">
+              <h1 className="text-white text-lg font-semibold text-center">
                 {member.name}
               </h1>
-              <p className="text-white">{member.role}</p>
+              <p className="text-white text-center">{member.role}</p>
             </div>
           ))}
         </div>
