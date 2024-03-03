@@ -8,7 +8,7 @@ import Four from "@/../public/images/four.jpg";
 const OurOffices = () => {
   return (
     <section className="bg-white flex flex-col w-screen justify-center items-center py-20">
-      <div className="w-4/5 space-y-9 pt-4">
+      <div className="w-11/12 px-2 lg:w-4/5 space-y-9 pt-4">
         <div className="py-4 space-y-5">
           <h4 className="text-blue-600 font-medium">Our Offices</h4>
           <p className="text-3xl font-medium">
@@ -16,11 +16,11 @@ const OurOffices = () => {
           </p>
         </div>
         <div>
-          <div className="flex">
-            <Image src={One} alt="Slider Image One" className="w-1/4" />
-            <Image src={Two} alt="Slider Image Two" className="w-1/4" />
-            <Image src={Three} alt="Slider Image Three" className="w-1/4" />
-            <Image src={Four} alt="Slider Image Four" className="w-1/4" />
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-y-5">
+            <Image src={One} alt="Slider Image One" className="w-full" />
+            <Image src={Two} alt="Slider Image Two" className="w-full" />
+            <Image src={Three} alt="Slider Image Three" className="w-full" />
+            <Image src={Four} alt="Slider Image Four" className="w-full" />
           </div>
         </div>
       </div>

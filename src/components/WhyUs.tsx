@@ -12,7 +12,7 @@ import { WhyUsCard } from "@/placeholders/WhyUsCard";
 const WhyUs = () => {
   return (
     <section className="bg-white lg:h-[120vh] overflow-hidden flex flex-col items-center justify-center">
-      <div className="lg:w-10/12 px-5 py-12">
+      <div className="lg:w-10/12 w-11/12 px-2 py-12">
         <div className="flex flex-col space-y-3">
           <h1 className="font-bold text-blue-600">Why Us</h1>
           <p className="text-3xl font-semibold">

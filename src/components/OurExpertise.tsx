@@ -17,7 +17,7 @@ const OurExpertise = () => {
         <div className="h-[25rem] w-[25rem] rounded-full shadow-inner shadow-blue-300  bg-blue-600 overflow-hidden"></div>
       </Parallax>
 
-      <div className="w-10/12 p-5 z-10">
+      <div className="lg:w-10/12 w-11/12 px-2 py-10 z-10">
         <div className="flex flex-col space-y-3">
           <h1 className="font-bold text-blue-200">Our Area Of Expertise</h1>
           <p className="text-3xl text-white font-semibold">
@@ -30,7 +30,7 @@ const OurExpertise = () => {
             industries:
           </p>
         </div>
-        <div className="h-20"></div>
+        <div className="h-14 lg:h-20"></div>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-x-5 lg:gap-y-8 md:gap-y-6 gap-y-5">
           {ExpertiseCard.map((card, index) => (
             <Card
