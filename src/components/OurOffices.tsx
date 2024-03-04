@@ -17,10 +17,26 @@ const OurOffices = () => {
         </div>
         <div>
           <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-y-5">
-            <Image src={One} alt="Slider Image One" className="w-full" />
-            <Image src={Two} alt="Slider Image Two" className="w-full" />
-            <Image src={Three} alt="Slider Image Three" className="w-full" />
-            <Image src={Four} alt="Slider Image Four" className="w-full" />
+            <Image
+              src={One}
+              alt="Slider Image One"
+              className="w-full aspect-square object-cover lg:aspect-auto"
+            />
+            <Image
+              src={Two}
+              alt="Slider Image Two"
+              className="w-full aspect-square object-cover lg:aspect-auto"
+            />
+            <Image
+              src={Three}
+              alt="Slider Image Three"
+              className="w-full aspect-square object-cover lg:aspect-auto"
+            />
+            <Image
+              src={Four}
+              alt="Slider Image Four"
+              className="w-full aspect-square object-cover lg:aspect-auto"
+            />
           </div>
         </div>
       </div>

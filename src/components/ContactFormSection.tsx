@@ -93,10 +93,10 @@ const ContactFormSection = () => {
       </div>
       <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
         <div className="lg:w-5/6 w-11/12 px-2 py-28">
-          <div className="bg-white p-11 shadow-xl rounded-xl">
+          <div className="bg-white p-4 lg:p-11 shadow-xl rounded-xl">
             <Form {...form}>
               <div className="space-y-3">
-                <div className="flex space-x-5">
+                <div className="flex flex-col lg:flex-row lg:space-x-5">
                   <FormField
                     name="firstName"
                     control={form.control}

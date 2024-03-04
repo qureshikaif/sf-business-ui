@@ -13,7 +13,7 @@ const AtGlance = () => {
     <section className="h-[120vh] pt-20 lg:pt-0 overflow-hidden flex flex-col items-center justify-center">
       <div className="w-11/12 lg:w-10/12 px-2">
         <div className="flex flex-col space-y-3">
-          <h1 className="font-medium text-3xl text-blue-800">
+          <h1 className="font-semibold text-3xl text-blue-600">
             SF Business at glance.
           </h1>
           <p className="text-lg font-light">

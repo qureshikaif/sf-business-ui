@@ -48,8 +48,8 @@ const ClientsCarousel = () => {
 
   return (
     <section className="py-24 bg-gray-100">
-      <div className="container mx-auto px-4">
-        <div className="relative h-[500px] overflow-hidden rounded-lg">
+      <div className="container mx-auto px-5">
+        <div className="relative h-[700px] lg:h-[500px] overflow-hidden rounded-lg">
           {slideData.map((slide, index) => (
             <div
               key={slide.id}
