@@ -1,8 +1,6 @@
 import Link from "next/link";
-import React from "react";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
-import Image from "next/image";
 import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
