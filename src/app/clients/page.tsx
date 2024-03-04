@@ -1,7 +1,7 @@
-import ClientsCarousel from "@/components/ui/ClientCarousel";
-import ClientsSection from "@/components/ui/Clients";
-import OurWorkSection from "@/components/ui/OurWork";
-import ReviewsSection from "@/components/ui/Reviews";
+import ClientsCarousel from "@/components/ClientCarousel";
+import ClientsSection from "@/components/Clients";
+import OurWorkSection from "@/components/OurWork";
+import ReviewsSection from "@/components/Reviews";
 
 const whoWeServe = () => {
   return (
