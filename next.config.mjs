@@ -24,12 +24,6 @@ const nextConfig = {
         pathname: "**",
       },
     ],
-    // domains: [
-    //   "images.unsplash.com",
-    //   "via.placeholder.com",
-    //   "unsplash.it",
-    //   "www.venturedive.com",
-    // ],
   },
 };
 

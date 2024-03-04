@@ -88,7 +88,7 @@ const Footer = () => {
             <SocialIcon
               url="https://instagram.com"
               bgColor="transparent"
-              className="border-white border rounded-full hover:bg-pink-800"
+              className="border-white border rounded-full hover:bg-gradient-to-t from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]"
             />
             <SocialIcon
               url="https://behance.com"
