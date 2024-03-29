@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const TalkToOurConsultant = () => {
   return (
@@ -12,9 +13,11 @@ const TalkToOurConsultant = () => {
           Book a 15-minute call with our consultant to engage and learn how we
           can help.
         </p>
-        <Button className="bg-white text-black hover:bg-blue-600 hover:text-white">
-          Talk to our consultant
-        </Button>
+        <Link href="/contact">
+          <Button className="bg-white text-black hover:bg-blue-600 hover:text-white">
+            Talk to our consultant
+          </Button>
+        </Link>
       </div>
     </section>
   );
