@@ -42,7 +42,8 @@ const accordion = [
   },
   {
     title: "Cloud Services",
-    content: "Yes. It adheres to the WAI-ARIA design pattern.",
+    content:
+      "Eliminate functional, performance, and security flaws within your system with our rounded-up quality assurance services, post-launch support, and maintenance. Deploy a seamless and well-functioning product for your users to benefit from.",
     value: "item-6",
   },
 ];
