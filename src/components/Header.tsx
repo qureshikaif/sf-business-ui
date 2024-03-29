@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import Logo from "../../public/logo.svg";
+import LogoPNG from "../../public/logo.png";
 import Image from "next/image";
 import useScroll from "@/hooks/useScroll";
 import { Menu } from "lucide-react";
@@ -18,15 +19,16 @@ const Header = () => {
         }`}
       >
         <div className="w-5/6 flex items-center justify-between">
-          <div className="flex items-center">
-            <Link href={"/"}>
-              <Image
-                className="object-contain w-20 h-20"
-                src={Logo}
-                alt="SF Business Solutions"
-              />
-            </Link>
-          </div>
+          <Link href={"/"} className="flex items-center">
+            <Image
+              className="object-contain size-14"
+              src={LogoPNG}
+              alt="SF Business Solutions"
+            />
+            <h1 className="text-lg font-bold text-blue-700">
+              SF Business Solutions
+            </h1>
+          </Link>
           <nav className="lg:flex basis-1/2 justify-between hidden">
             <Link href="/about" className="hover:text-blue-800">
               About Us

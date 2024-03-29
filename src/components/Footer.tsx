@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import LogoPNG from "../../public/logo.png";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 import { SocialIcon } from "react-social-icons";
@@ -9,9 +11,16 @@ const Footer = () => {
       <footer className="w-full bg-blue-800 flex flex-col items-center px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
         <div className="w-full py-10">
           <div className="py-5">
-            <h1 className="text-2xl font-bold text-white">
-              SF Business Solutions
-            </h1>
+            <Link href={"/"} className="flex items-center">
+              <Image
+                className="object-contain size-14"
+                src={LogoPNG}
+                alt="SF Business Solutions"
+              />
+              <h1 className="text-lg font-bold text-white">
+                SF Business Solutions
+              </h1>
+            </Link>
           </div>
           <div className="flex flex-col md:flex-row justify-between text-white">
             <div className="w-full md:w-1/2 space-y-10">
@@ -27,13 +36,19 @@ const Footer = () => {
             </div>
             <div className="w-full md:w-1/4 flex flex-col mt-10 md:mt-0 lg:items-center">
               <div className="flex flex-col space-y-3">
-                <h1 className="font-semibold">Trusted By</h1>
+                <h1 className="font-semibold">Contact</h1>
                 <Link href="/" className="hover:underline underline-offset-4">
-                  Startups
+                  Karachi, Pakistan
                 </Link>
-                <Link href="/" className="hover:underline underline-offset-4">
-                  Enterprises
+                <Link
+                  href="tel:03331234567"
+                  className="hover:underline underline-offset-4"
+                >
+                  0333 1234567
                 </Link>
+                {/* <Link href="/" className="hover:underline underline-offset-4">
+                  samad@sfbussiness.com
+                </Link> */}
               </div>
             </div>
             <div className="w-full md:w-1/3 flex flex-col mt-10 md:mt-0 lg:items-center">
@@ -65,9 +80,9 @@ const Footer = () => {
                 <Link href="/" className="hover:underline underline-offset-4">
                   Blogs
                 </Link>
-                <Link href="/" className="hover:underline underline-offset-4">
+                {/* <Link href="/" className="hover:underline underline-offset-4">
                   Contact us
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

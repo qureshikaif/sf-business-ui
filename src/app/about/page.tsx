@@ -1,6 +1,5 @@
 "use client";
 import AtGlance from "@/components/AtGlance";
-import JoinUs from "@/components/JoinUs";
 import MeetUs from "@/components/MeetUs";
 import OurCommitments from "@/components/OurCommitments";
 import OurExpertise from "@/components/OurExpertise";
@@ -14,7 +13,7 @@ const About = () => {
       <WhyUs />
       <MeetUs />
       <OurCommitments />
-      <JoinUs />
+      {/* <JoinUs /> */}
     </section>
   );
 };
