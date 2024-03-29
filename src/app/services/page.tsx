@@ -1,5 +1,6 @@
 import OurServices from "@/components/OurServices";
 import ServicesHero from "@/components/ServicesHero";
+import TalkToOurConsultant from "@/components/TalkToOurConsultant";
 import {
   Card,
   CardHeader,
@@ -103,6 +104,7 @@ const Services = () => {
     <div className="overflow-hidden">
       <ServicesHero />;
       <OurServices />
+      <TalkToOurConsultant />
     </div>
   );
 };
