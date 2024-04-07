@@ -21,17 +21,25 @@
   text-align: center;
 }
 
---webkit-scrollbar {
-  width: 5px;
+::-webkit-scrollbar {
+  width: 7px;
 }
 
---webkit-scrollbar-track {
-  background: var(--background);
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2563eb;
+  border-radius: 0px;
 }
 
---webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 6px;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #93c5fd;
 }
 
 @layer base {
