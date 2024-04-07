@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 import Link from "next/link";
 import Logo from "../../public/logo.png";
 import LogoWhite from "../../public/logo-white.png";
@@ -38,7 +38,7 @@ const Header = () => {
   console.log(pathname);
   const isLandingPage = pathname === "/";
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const scrollListener = () => {
       setIsTop(window.pageYOffset < 50);
     };
