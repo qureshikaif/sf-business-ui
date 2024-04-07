@@ -1,50 +1,89 @@
 "use client";
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import Logo from "../../public/logo.svg";
-import LogoPNG from "../../public/logo.png";
+import Logo from "../../public/logo.png";
+import LogoWhite from "../../public/logo-white.png";
 import Image from "next/image";
 import useScroll from "@/hooks/useScroll";
 import { Menu } from "lucide-react";
 
+const links = [
+  {
+    name: "Home",
+    path: "/",
+  },
+  {
+    name: "About Us",
+    path: "/about",
+  },
+  {
+    name: "Contact Us",
+    path: "/contact",
+  },
+  {
+    name: "Services",
+    path: "/services",
+  },
+  {
+    name: "Who we serve",
+    path: "/clients",
+  },
+];
+
 const Header = () => {
   const { showNav, showMobileNav, setShowMobileNav } = useScroll();
+  const [isTop, setIsTop] = useState(true);
+
+  useEffect(() => {
+    const scrollListener = () => {
+      setIsTop(window.pageYOffset < 50);
+    };
+
+    window.addEventListener("scroll", scrollListener);
+
+    return () => {
+      window.removeEventListener("scroll", scrollListener);
+    };
+  }, []);
 
   const handleLinkClick = () => setShowMobileNav(false);
 
   return (
     <>
       <header
-        className={`shadow-md fixed w-full h-20 flex justify-center p-5 items-center overflow-hidden z-50 bg-white transition-transform duration-200 ease-in-out ${
+        className={`fixed w-full h-20 flex justify-center p-5 items-center overflow-hidden z-50 transition-all duration-200 ease-in-out ${
           showNav ? "" : "-translate-y-full"
-        }`}
+        } ${isTop ? "bg-transparent shadow-none" : "bg-white shadow-md"}`}
       >
         <div className="w-5/6 flex items-center justify-between">
           <Link href={"/"} className="flex items-center">
             <Image
               className="object-contain size-14"
-              src={LogoPNG}
+              src={isTop ? LogoWhite : Logo}
               alt="SF Business Solutions"
             />
-            <h1 className="text-lg font-bold text-blue-700">
+            <h1
+              className={`text-lg font-bold ${
+                isTop ? "text-white" : "text-blue-600"
+              }`}
+            >
               SF Business Solutions
             </h1>
           </Link>
           <nav className="lg:flex basis-1/2 justify-between hidden">
-            <Link href="/" className="hover:text-blue-800">
-              Home
-            </Link>
-            <Link href="/about" className="hover:text-blue-800">
-              About Us
-            </Link>
-            <Link href="/contact" className="hover:text-blue-800">
-              Contact Us
-            </Link>
-            <Link href="/services" className="hover:text-blue-800">
-              Services
-            </Link>
-            <Link href="/clients" className="hover:text-blue-800">
-              Who we serve
-            </Link>
+            {links.map((link, index) => (
+              <Link
+                key={index}
+                href={link.path}
+                className={`${
+                  isTop
+                    ? "text-white hover:text-blue-100"
+                    : "hover:text-blue-800"
+                }`}
+              >
+                {link.name}
+              </Link>
+            ))}
           </nav>
         </div>
         <Menu
@@ -58,41 +97,16 @@ const Header = () => {
           showMobileNav ? "flex flex-col" : "-translate-y-full"
         } ease-in-out`}
       >
-        <Link
-          onClick={handleLinkClick}
-          href="/"
-          className="hover:text-blue-800"
-        >
-          Home
-        </Link>
-        <Link
-          onClick={handleLinkClick}
-          href="/about"
-          className="hover:text-blue-800"
-        >
-          About Us
-        </Link>
-        <Link
-          onClick={handleLinkClick}
-          href="/contact"
-          className="hover:text-blue-800"
-        >
-          Contact Us
-        </Link>
-        <Link
-          onClick={handleLinkClick}
-          href="/clients"
-          className="hover:text-blue-800"
-        >
-          Who we serve
-        </Link>
-        <Link
-          onClick={handleLinkClick}
-          href="/services"
-          className="hover:text-blue-800"
-        >
-          Services
-        </Link>
+        {links.map((link, index) => (
+          <Link
+            key={index}
+            onClick={handleLinkClick}
+            href={link.path}
+            className="hover:text-blue-800"
+          >
+            {link.name}
+          </Link>
+        ))}
       </nav>
     </>
   );
