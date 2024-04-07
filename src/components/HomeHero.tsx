@@ -6,8 +6,7 @@ const HomeHero = () => {
     <section className="lg:h-screen bg-fixed space-x-40 flex flex-col lg:flex-row items-center justify-center bg-blue-600">
       <div className="h-screen w-1/2 flex flex-col justify-center items-center">
         <div className="space-y-3 lg:space-y-8">
-          {/* <h1>Our Services</h1> */}
-          <div className="space-y-10">
+          <div className="space-y-10 lg:mt-10">
             <h1 className="text-6xl font-semibold leading-normal text-white">
               Dynamic solutions that power high-growth startups
             </h1>
