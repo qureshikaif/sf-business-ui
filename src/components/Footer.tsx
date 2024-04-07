@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import LogoPNG from "../../public/logo.png";
+import LogoPNG from "../../public/logo-white.png";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 import { SocialIcon } from "react-social-icons";
@@ -88,7 +88,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <Separator className="bg-white" />
+      <Separator className="bg-white h-[0.5px]" />
       <div className="flex justify-center items-center py-12 bg-blue-800 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
         <div className="flex flex-col md:flex-row justify-between items-center w-full text-white">
           <h1>© SF Business Solutions. All rights reserved.</h1>
