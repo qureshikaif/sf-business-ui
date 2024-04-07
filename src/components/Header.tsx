@@ -30,6 +30,9 @@ const Header = () => {
             </h1>
           </Link>
           <nav className="lg:flex basis-1/2 justify-between hidden">
+            <Link href="/" className="hover:text-blue-800">
+              Home
+            </Link>
             <Link href="/about" className="hover:text-blue-800">
               About Us
             </Link>
@@ -55,6 +58,13 @@ const Header = () => {
           showMobileNav ? "flex flex-col" : "-translate-y-full"
         } ease-in-out`}
       >
+        <Link
+          onClick={handleLinkClick}
+          href="/"
+          className="hover:text-blue-800"
+        >
+          Home
+        </Link>
         <Link
           onClick={handleLinkClick}
           href="/about"

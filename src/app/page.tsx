@@ -1,10 +1,11 @@
-import Image from "next/image";
-import Contact from "./contact/page";
+import FeaturedServices from "@/components/FeaturedServices";
+import HomeHero from "@/components/HomeHero";
 
 export default function Home() {
   return (
-    <main className="">
-      <Contact />
+    <main className="overflow-hidden">
+      <HomeHero />
+      <FeaturedServices />
     </main>
   );
 }
