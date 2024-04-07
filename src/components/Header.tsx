@@ -6,6 +6,7 @@ import LogoWhite from "../../public/logo-white.png";
 import Image from "next/image";
 import useScroll from "@/hooks/useScroll";
 import { Menu } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const links = [
   {
@@ -33,6 +34,9 @@ const links = [
 const Header = () => {
   const { showNav, showMobileNav, setShowMobileNav } = useScroll();
   const [isTop, setIsTop] = useState(true);
+  const pathname = usePathname();
+  console.log(pathname);
+  const isLandingPage = pathname === "/";
 
   useEffect(() => {
     const scrollListener = () => {
@@ -53,18 +57,22 @@ const Header = () => {
       <header
         className={`fixed w-full h-20 flex justify-center p-5 items-center overflow-hidden z-50 transition-all duration-200 ease-in-out ${
           showNav ? "" : "-translate-y-full"
-        } ${isTop ? "bg-transparent shadow-none" : "bg-white shadow-md"}`}
+        } ${
+          isTop && isLandingPage
+            ? "bg-transparent shadow-none"
+            : "bg-white shadow-md"
+        }`}
       >
         <div className="w-5/6 flex items-center justify-between">
           <Link href={"/"} className="flex items-center">
             <Image
               className="object-contain size-14"
-              src={isTop ? LogoWhite : Logo}
+              src={isTop && isLandingPage ? LogoWhite : Logo}
               alt="SF Business Solutions"
             />
             <h1
               className={`text-lg font-bold ${
-                isTop ? "text-white" : "text-blue-600"
+                isTop && isLandingPage ? "text-white" : "text-blue-600"
               }`}
             >
               SF Business Solutions
@@ -76,7 +84,7 @@ const Header = () => {
                 key={index}
                 href={link.path}
                 className={`${
-                  isTop
+                  isTop && isLandingPage
                     ? "text-white hover:text-blue-100"
                     : "hover:text-blue-800"
                 }`}
