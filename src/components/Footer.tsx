@@ -88,7 +88,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <Separator className="bg-white h-[0.5px]" />
+      <Separator className="bg-white h-[1px]" />
       <div className="flex justify-center items-center py-12 bg-blue-800 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
         <div className="flex flex-col md:flex-row justify-between items-center w-full text-white">
           <h1>© SF Business Solutions. All rights reserved.</h1>
