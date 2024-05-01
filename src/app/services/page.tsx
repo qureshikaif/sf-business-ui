@@ -1,103 +1,6 @@
-import OurServices from "@/components/OurServices";
+/* import OurServices from "@/components/OurServices";
 import ServicesHero from "@/components/ServicesHero";
 import TalkToOurConsultant from "@/components/TalkToOurConsultant";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-} from "@/components/ui/card";
-import Image from "next/image";
-import Link from "next/link";
-
-// const services = [
-//   {
-//     id: 1,
-//     title: "Quickbooks consulting",
-//     image: "https://via.placeholder.com/150",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio iusto quo recusandae corrupti corporis? Dolorem aliquam ipsum id ab officia molestias, dolore ratione ipsa facilis, minima, vel enim itaque rerum. Alias, ipsa, dignissimos omnis consectetur illo eveniet tempore enim velit cupiditate fuga optio quia! Ut obcaecati aspernatur ex tempore itaque, doloribus tenetur iure unde voluptatibus delectus ab quos eveniet reprehenderit.Sequi repudiandae similique voluptas doloribus quas, dolorem laudantium aut, ut, quasi vero omnis! Voluptatem, quasi? Suscipit nemo, doloribus veritatis eum reprehenderit maiores eaque provident accusamus eveniet ex cupiditate quis repudiandae!Ducimus error harum natus officiis quibusdam autem adipisci totam nostrum optio fugiat illo qui ad odit recusandae dignissimos, deserunt fuga quae commodi quaerat aspernatur sequi ipsa. Quidem nobis vero perferendis?Fuga doloremque tenetur saepe nobis, iure vel deserunt soluta sed quidem doloribus in incidunt atque cumque aspernatur nesciunt quisquam quibusdam dolores id laborum! Mollitia repudiandae ea, laboriosam tempore nemo porro!",
-//   },
-
-//   {
-//     id: 2,
-//     title: "Quickbooks consulting",
-//     image: "https://via.placeholder.com/150",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio iusto quo recusandae corrupti corporis? Dolorem aliquam ipsum id ab officia molestias, dolore ratione ipsa facilis, minima, vel enim itaque rerum. Alias, ipsa, dignissimos omnis consectetur illo eveniet tempore enim velit cupiditate fuga optio quia! Ut obcaecati aspernatur ex tempore itaque, doloribus tenetur iure unde voluptatibus delectus ab quos eveniet reprehenderit.Sequi repudiandae similique voluptas doloribus quas, dolorem laudantium aut, ut, quasi vero omnis! Voluptatem, quasi? Suscipit nemo, doloribus veritatis eum reprehenderit maiores eaque provident accusamus eveniet ex cupiditate quis repudiandae!Ducimus error harum natus officiis quibusdam autem adipisci totam nostrum optio fugiat illo qui ad odit recusandae dignissimos, deserunt fuga quae commodi quaerat aspernatur sequi ipsa. Quidem nobis vero perferendis?Fuga doloremque tenetur saepe nobis, iure vel deserunt soluta sed quidem doloribus in incidunt atque cumque aspernatur nesciunt quisquam quibusdam dolores id laborum! Mollitia repudiandae ea, laboriosam tempore nemo porro!",
-//   },
-//   {
-//     id: 3,
-//     title: "Quickbooks consulting",
-//     image: "https://via.placeholder.com/150",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio iusto quo recusandae corrupti corporis? Dolorem aliquam ipsum id ab officia molestias, dolore ratione ipsa facilis, minima, vel enim itaque rerum. Alias, ipsa, dignissimos omnis consectetur illo eveniet tempore enim velit cupiditate fuga optio quia! Ut obcaecati aspernatur ex tempore itaque, doloribus tenetur iure unde voluptatibus delectus ab quos eveniet reprehenderit.Sequi repudiandae similique voluptas doloribus quas, dolorem laudantium aut, ut, quasi vero omnis! Voluptatem, quasi? Suscipit nemo, doloribus veritatis eum reprehenderit maiores eaque provident accusamus eveniet ex cupiditate quis repudiandae!Ducimus error harum natus officiis quibusdam autem adipisci totam nostrum optio fugiat illo qui ad odit recusandae dignissimos, deserunt fuga quae commodi quaerat aspernatur sequi ipsa. Quidem nobis vero perferendis?Fuga doloremque tenetur saepe nobis, iure vel deserunt soluta sed quidem doloribus in incidunt atque cumque aspernatur nesciunt quisquam quibusdam dolores id laborum! Mollitia repudiandae ea, laboriosam tempore nemo porro!",
-//   },
-//   {
-//     id: 4,
-//     title: "Quickbooks consulting",
-//     image: "https://via.placeholder.com/150",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio iusto quo recusandae corrupti corporis? Dolorem aliquam ipsum id ab officia molestias, dolore ratione ipsa facilis, minima, vel enim itaque rerum. Alias, ipsa, dignissimos omnis consectetur illo eveniet tempore enim velit cupiditate fuga optio quia! Ut obcaecati aspernatur ex tempore itaque, doloribus tenetur iure unde voluptatibus delectus ab quos eveniet reprehenderit.Sequi repudiandae similique voluptas doloribus quas, dolorem laudantium aut, ut, quasi vero omnis! Voluptatem, quasi? Suscipit nemo, doloribus veritatis eum reprehenderit maiores eaque provident accusamus eveniet ex cupiditate quis repudiandae!Ducimus error harum natus officiis quibusdam autem adipisci totam nostrum optio fugiat illo qui ad odit recusandae dignissimos, deserunt fuga quae commodi quaerat aspernatur sequi ipsa. Quidem nobis vero perferendis?Fuga doloremque tenetur saepe nobis, iure vel deserunt soluta sed quidem doloribus in incidunt atque cumque aspernatur nesciunt quisquam quibusdam dolores id laborum! Mollitia repudiandae ea, laboriosam tempore nemo porro!",
-//   },
-//   {
-//     id: 5,
-//     title: "Quickbooks consulting",
-//     image: "https://via.placeholder.com/150",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio iusto quo recusandae corrupti corporis? Dolorem aliquam ipsum id ab officia molestias, dolore ratione ipsa facilis, minima, vel enim itaque rerum. Alias, ipsa, dignissimos omnis consectetur illo eveniet tempore enim velit cupiditate fuga optio quia! Ut obcaecati aspernatur ex tempore itaque, doloribus tenetur iure unde voluptatibus delectus ab quos eveniet reprehenderit.Sequi repudiandae similique voluptas doloribus quas, dolorem laudantium aut, ut, quasi vero omnis! Voluptatem, quasi? Suscipit nemo, doloribus veritatis eum reprehenderit maiores eaque provident accusamus eveniet ex cupiditate quis repudiandae!Ducimus error harum natus officiis quibusdam autem adipisci totam nostrum optio fugiat illo qui ad odit recusandae dignissimos, deserunt fuga quae commodi quaerat aspernatur sequi ipsa. Quidem nobis vero perferendis?Fuga doloremque tenetur saepe nobis, iure vel deserunt soluta sed quidem doloribus in incidunt atque cumque aspernatur nesciunt quisquam quibusdam dolores id laborum! Mollitia repudiandae ea, laboriosam tempore nemo porro!",
-//   },
-//   {
-//     id: 6,
-//     title: "Quickbooks consulting",
-//     image: "https://via.placeholder.com/150",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio iusto quo recusandae corrupti corporis? Dolorem aliquam ipsum id ab officia molestias, dolore ratione ipsa facilis, minima, vel enim itaque rerum. Alias, ipsa, dignissimos omnis consectetur illo eveniet tempore enim velit cupiditate fuga optio quia! Ut obcaecati aspernatur ex tempore itaque, doloribus tenetur iure unde voluptatibus delectus ab quos eveniet reprehenderit.Sequi repudiandae similique voluptas doloribus quas, dolorem laudantium aut, ut, quasi vero omnis! Voluptatem, quasi? Suscipit nemo, doloribus veritatis eum reprehenderit maiores eaque provident accusamus eveniet ex cupiditate quis repudiandae!Ducimus error harum natus officiis quibusdam autem adipisci totam nostrum optio fugiat illo qui ad odit recusandae dignissimos, deserunt fuga quae commodi quaerat aspernatur sequi ipsa. Quidem nobis vero perferendis?Fuga doloremque tenetur saepe nobis, iure vel deserunt soluta sed quidem doloribus in incidunt atque cumque aspernatur nesciunt quisquam quibusdam dolores id laborum! Mollitia repudiandae ea, laboriosam tempore nemo porro!",
-//   },
-//   {
-//     id: 7,
-//     title: "Quickbooks consulting",
-//     image: "https://via.placeholder.com/150",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio iusto quo recusandae corrupti corporis? Dolorem aliquam ipsum id ab officia molestias, dolore ratione ipsa facilis, minima, vel enim itaque rerum. Alias, ipsa, dignissimos omnis consectetur illo eveniet tempore enim velit cupiditate fuga optio quia! Ut obcaecati aspernatur ex tempore itaque, doloribus tenetur iure unde voluptatibus delectus ab quos eveniet reprehenderit.Sequi repudiandae similique voluptas doloribus quas, dolorem laudantium aut, ut, quasi vero omnis! Voluptatem, quasi? Suscipit nemo, doloribus veritatis eum reprehenderit maiores eaque provident accusamus eveniet ex cupiditate quis repudiandae!Ducimus error harum natus officiis quibusdam autem adipisci totam nostrum optio fugiat illo qui ad odit recusandae dignissimos, deserunt fuga quae commodi quaerat aspernatur sequi ipsa. Quidem nobis vero perferendis?Fuga doloremque tenetur saepe nobis, iure vel deserunt soluta sed quidem doloribus in incidunt atque cumque aspernatur nesciunt quisquam quibusdam dolores id laborum! Mollitia repudiandae ea, laboriosam tempore nemo porro!",
-//   },
-//   {
-//     id: 8,
-//     title: "Quickbooks consulting",
-//     image: "https://via.placeholder.com/150",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio iusto quo recusandae corrupti corporis? Dolorem aliquam ipsum id ab officia molestias, dolore ratione ipsa facilis, minima, vel enim itaque rerum. Alias, ipsa, dignissimos omnis consectetur illo eveniet tempore enim velit cupiditate fuga optio quia! Ut obcaecati aspernatur ex tempore itaque, doloribus tenetur iure unde voluptatibus delectus ab quos eveniet reprehenderit.Sequi repudiandae similique voluptas doloribus quas, dolorem laudantium aut, ut, quasi vero omnis! Voluptatem, quasi? Suscipit nemo, doloribus veritatis eum reprehenderit maiores eaque provident accusamus eveniet ex cupiditate quis repudiandae!Ducimus error harum natus officiis quibusdam autem adipisci totam nostrum optio fugiat illo qui ad odit recusandae dignissimos, deserunt fuga quae commodi quaerat aspernatur sequi ipsa. Quidem nobis vero perferendis?Fuga doloremque tenetur saepe nobis, iure vel deserunt soluta sed quidem doloribus in incidunt atque cumque aspernatur nesciunt quisquam quibusdam dolores id laborum! Mollitia repudiandae ea, laboriosam tempore nemo porro!",
-//   },
-//   {
-//     id: 9,
-//     title: "Quickbooks consulting",
-//     image: "https://via.placeholder.com/150",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio iusto quo recusandae corrupti corporis? Dolorem aliquam ipsum id ab officia molestias, dolore ratione ipsa facilis, minima, vel enim itaque rerum. Alias, ipsa, dignissimos omnis consectetur illo eveniet tempore enim velit cupiditate fuga optio quia! Ut obcaecati aspernatur ex tempore itaque, doloribus tenetur iure unde voluptatibus delectus ab quos eveniet reprehenderit.Sequi repudiandae similique voluptas doloribus quas, dolorem laudantium aut, ut, quasi vero omnis! Voluptatem, quasi? Suscipit nemo, doloribus veritatis eum reprehenderit maiores eaque provident accusamus eveniet ex cupiditate quis repudiandae!Ducimus error harum natus officiis quibusdam autem adipisci totam nostrum optio fugiat illo qui ad odit recusandae dignissimos, deserunt fuga quae commodi quaerat aspernatur sequi ipsa. Quidem nobis vero perferendis?Fuga doloremque tenetur saepe nobis, iure vel deserunt soluta sed quidem doloribus in incidunt atque cumque aspernatur nesciunt quisquam quibusdam dolores id laborum! Mollitia repudiandae ea, laboriosam tempore nemo porro!",
-//   },
-//   {
-//     id: 10,
-//     title: "Quickbooks consulting",
-//     image: "https://via.placeholder.com/150",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio iusto quo recusandae corrupti corporis? Dolorem aliquam ipsum id ab officia molestias, dolore ratione ipsa facilis, minima, vel enim itaque rerum. Alias, ipsa, dignissimos omnis consectetur illo eveniet tempore enim velit cupiditate fuga optio quia! Ut obcaecati aspernatur ex tempore itaque, doloribus tenetur iure unde voluptatibus delectus ab quos eveniet reprehenderit.Sequi repudiandae similique voluptas doloribus quas, dolorem laudantium aut, ut, quasi vero omnis! Voluptatem, quasi? Suscipit nemo, doloribus veritatis eum reprehenderit maiores eaque provident accusamus eveniet ex cupiditate quis repudiandae!Ducimus error harum natus officiis quibusdam autem adipisci totam nostrum optio fugiat illo qui ad odit recusandae dignissimos, deserunt fuga quae commodi quaerat aspernatur sequi ipsa. Quidem nobis vero perferendis?Fuga doloremque tenetur saepe nobis, iure vel deserunt soluta sed quidem doloribus in incidunt atque cumque aspernatur nesciunt quisquam quibusdam dolores id laborum! Mollitia repudiandae ea, laboriosam tempore nemo porro!",
-//   },
-//   {
-//     id: 11,
-//     title: "Quickbooks consulting",
-//     image: "https://via.placeholder.com/150",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio iusto quo recusandae corrupti corporis? Dolorem aliquam ipsum id ab officia molestias, dolore ratione ipsa facilis, minima, vel enim itaque rerum. Alias, ipsa, dignissimos omnis consectetur illo eveniet tempore enim velit cupiditate fuga optio quia! Ut obcaecati aspernatur ex tempore itaque, doloribus tenetur iure unde voluptatibus delectus ab quos eveniet reprehenderit.Sequi repudiandae similique voluptas doloribus quas, dolorem laudantium aut, ut, quasi vero omnis! Voluptatem, quasi? Suscipit nemo, doloribus veritatis eum reprehenderit maiores eaque provident accusamus eveniet ex cupiditate quis repudiandae!Ducimus error harum natus officiis quibusdam autem adipisci totam nostrum optio fugiat illo qui ad odit recusandae dignissimos, deserunt fuga quae commodi quaerat aspernatur sequi ipsa. Quidem nobis vero perferendis?Fuga doloremque tenetur saepe nobis, iure vel deserunt soluta sed quidem doloribus in incidunt atque cumque aspernatur nesciunt quisquam quibusdam dolores id laborum! Mollitia repudiandae ea, laboriosam tempore nemo porro!",
-//   },
-//   {
-//     id: 12,
-//     title: "Quickbooks consulting",
-//     image: "https://via.placeholder.com/150",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio iusto quo recusandae corrupti corporis? Dolorem aliquam ipsum id ab officia molestias, dolore ratione ipsa facilis, minima, vel enim itaque rerum. Alias, ipsa, dignissimos omnis consectetur illo eveniet tempore enim velit cupiditate fuga optio quia! Ut obcaecati aspernatur ex tempore itaque, doloribus tenetur iure unde voluptatibus delectus ab quos eveniet reprehenderit.Sequi repudiandae similique voluptas doloribus quas, dolorem laudantium aut, ut, quasi vero omnis! Voluptatem, quasi? Suscipit nemo, doloribus veritatis eum reprehenderit maiores eaque provident accusamus eveniet ex cupiditate quis repudiandae!Ducimus error harum natus officiis quibusdam autem adipisci totam nostrum optio fugiat illo qui ad odit recusandae dignissimos, deserunt fuga quae commodi quaerat aspernatur sequi ipsa. Quidem nobis vero perferendis?Fuga doloremque tenetur saepe nobis, iure vel deserunt soluta sed quidem doloribus in incidunt atque cumque aspernatur nesciunt quisquam quibusdam dolores id laborum! Mollitia repudiandae ea, laboriosam tempore nemo porro!",
-//   },
-// ];
 
 const Services = () => {
   return (
@@ -109,7 +12,7 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Services; */
 
 // <section className="pt-20">
 //   <div className="bg-blue-600 w-full lg:h-64 md:h-64 h-44 flex flex-col items-center justify-center lg:space-y-6 space-y-2">

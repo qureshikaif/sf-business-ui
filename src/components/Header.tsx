@@ -1,12 +1,13 @@
 "use client";
-import { useState, useEffect, useLayoutEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 import Link from "next/link";
 import Logo from "../../public/logo.png";
 import LogoWhite from "../../public/logo-white.png";
 import Image from "next/image";
 import useScroll from "@/hooks/useScroll";
-import { Menu } from "lucide-react";
+import { ChevronDown, Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { services } from "@/placeholders/Services";
 
 const links = [
   {
@@ -24,6 +25,10 @@ const links = [
   {
     name: "Services",
     path: "/services",
+    dropdown: services.map((service) => ({
+      name: service.name,
+      path: `/services/${service.id}`,
+    })),
   },
   {
     name: "Who we serve",
@@ -35,7 +40,6 @@ const Header = () => {
   const { showNav, showMobileNav, setShowMobileNav } = useScroll();
   const [isTop, setIsTop] = useState(true);
   const pathname = usePathname();
-  console.log(pathname);
   const isLandingPage = pathname === "/";
 
   useLayoutEffect(() => {
@@ -55,7 +59,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`fixed w-full h-20 flex justify-center p-5 items-center overflow-hidden z-50 transition-all duration-200 ease-in-out ${
+        className={`fixed w-full h-20 flex justify-center p-5 items-center z-50 transition-all duration-200 ease-in-out ${
           showNav ? "" : "-translate-y-full"
         } ${
           isTop && isLandingPage
@@ -80,20 +84,36 @@ const Header = () => {
           </Link>
           <nav className="lg:flex basis-1/2 justify-between hidden">
             {links.map((link, index) => (
-              <Link
-                key={index}
-                href={link.path}
-                className={`${
-                  isTop && isLandingPage
-                    ? "text-white hover:text-blue-100"
-                    : "hover:text-blue-800"
-                }`}
-              >
-                {link.name}
-              </Link>
+              <div key={index} className="relative group">
+                <Link
+                  href={link.path}
+                  className={`flex items-center ${
+                    isTop && isLandingPage
+                      ? "text-white hover:text-blue-100"
+                      : "hover:text-blue-800"
+                  }`}
+                >
+                  {link.name}
+                  {link.name === "Services" && <ChevronDown size={16} />}
+                </Link>
+                {link.dropdown && (
+                  <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 transition ease-in-out duration-150 opacity-0 group-hover:opacity-100 z-50">
+                    {link.dropdown.map((dropdownLink, index) => (
+                      <Link
+                        key={index}
+                        href={dropdownLink.path}
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        {dropdownLink.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </nav>
         </div>
+
         <Menu
           size={24}
           className="lg:hidden"

@@ -1,4 +1,4 @@
-import { ArrowBigDown, ArrowDownCircle, BarChart4 } from "lucide-react";
+import { BarChart4 } from "lucide-react";
 import { Button } from "./ui/button";
 
 const HomeHero = () => {

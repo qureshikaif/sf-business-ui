@@ -8,6 +8,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Separator } from "./ui/separator";
+import { ServicesProps, serviceType } from "@/types/service";
 
 const accordion = [
   {
@@ -48,20 +49,23 @@ const accordion = [
   },
 ];
 
-const OurServices = () => {
+const OurServices = ({ service }: ServicesProps) => {
   return (
     <section className="overflow-hidden flex flex-col items-center py-40 lg:min-h-[110vh]">
       <div className="lg:w-10/12 w-11/12 px-2 py-5 h-1/2">
         <div className="flex flex-col space-y-3">
-          <h1 className="font-bold text-blue-600">Our Services</h1>
-          <h1 className="text-3xl font-medium">
-            Offering a range of services geared towards business growth
-          </h1>
+          <h1 className="font-bold text-blue-600">{service.name}</h1>
+          <h1 className="text-3xl font-medium">{service.subtitle}</h1>
         </div>
         <div className="h-20"></div>
         <div className="flex space-x-44 items-center">
           <Image src={OurServicesImage} alt="" className="rounded-lg" />
-          <Accordion
+          <div className="flex flex-col">
+            <h1 className="text-xl font-semibold">Description</h1>
+            <Separator className="bg-gray-200 my-2" />
+            <p>{service.description}</p>
+          </div>
+          {/* <Accordion
             type="single"
             collapsible
             className="w-full px-5 space-y-3"
@@ -77,7 +81,7 @@ const OurServices = () => {
                 <Separator className="bg-gray-200" />
               </AccordionItem>
             ))}
-          </Accordion>
+          </Accordion> */}
         </div>
       </div>
     </section>
