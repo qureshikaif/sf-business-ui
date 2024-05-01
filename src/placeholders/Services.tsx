@@ -1,44 +1,45 @@
 export const services = [
   {
     id: 1,
-    name: "Accounting",
-    subtitle: "Accounting Services",
+    name: "Accounting Service",
+    subtitle:
+      "Professional Accounting Services for Effective Financial Management",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Our accounting services are designed to help you manage your finances effectively. We provide comprehensive solutions, from bookkeeping to financial reporting, ensuring your business operates smoothly. Our team of experienced accountants is dedicated to maintaining the highest standards of accuracy and timeliness.",
   },
   {
     id: 2,
-    name: "Bookkeeping",
-    subtitle: "Bookkeeping Services",
+    name: "Bookkeeping Service",
+    subtitle: "Reliable Bookkeeping Services for Accurate Financial Records",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Keep your financial records in order with our reliable bookkeeping services. We handle all aspects of bookkeeping, allowing you to focus on running your business. Our services include recording transactions, reconciling bank statements, and preparing financial statements.",
   },
   {
     id: 3,
     name: "Tax Services",
-    subtitle: "Bookkeeping Services",
+    subtitle: "Expert Tax Services for Efficient Tax Management",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Navigating the complexities of taxes can be challenging. Our expert tax services are here to help. We offer tax planning, preparation, and filing services to keep your business compliant. Our tax professionals stay updated on the latest tax laws to ensure you take advantage of all applicable tax benefits.",
   },
   {
     id: 4,
     name: "Finance Services",
-    subtitle: "Bookkeeping Services",
+    subtitle: "Comprehensive Financial Services for Business Growth",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Our financial services go beyond basic accounting and bookkeeping. We offer financial planning, budgeting, and forecasting services to help your business grow. Our financial experts work closely with you to understand your business goals and develop a financial strategy that aligns with them.",
   },
   {
     id: 5,
-    name: "Team as a service",
-    subtitle: "Bookkeeping Services",
+    name: "Team as a Service",
+    subtitle: "Dedicated Team Services for Exclusive Financial Operations",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Need a dedicated team to handle your financial operations? Our 'Team as a Service' provides you with a group of skilled professionals who work exclusively for your business. This service allows you to have a full-fledged finance team without the overhead costs of hiring and training.",
   },
   {
     id: 6,
     name: "Consultation & Advisory",
-    subtitle: "Bookkeeping Services",
+    subtitle: "Strategic Consultation Services for Informed Business Decisions",
     description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Our consultation and advisory services are designed to provide strategic insights into your business. We help you make informed decisions to drive growth and profitability. Our consultants analyze your business operations, identify opportunities for improvement, and provide actionable recommendations.",
   },
 ];
