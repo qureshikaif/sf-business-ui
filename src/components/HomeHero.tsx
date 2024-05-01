@@ -1,5 +1,7 @@
 import { BarChart4 } from "lucide-react";
 import { Button } from "./ui/button";
+import HomeHeroImage from "@/../public/images/home-hero.png";
+import Image from "next/image";
 
 const HomeHero = () => {
   return (
@@ -27,6 +29,7 @@ const HomeHero = () => {
       </div>
       <div className="size-80 bg-blue-500 p-10 rounded-full flex items-center justify-center shadow-2xl shadow-gray-700">
         {/* <ArrowBigDown className="text-white text-7xl size-44" /> */}
+        {/*  <Image src={HomeHeroImage} width={44} height={44} alt="" /> */}
         <BarChart4 className="text-white text-7xl size-96" />
       </div>
     </section>
