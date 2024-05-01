@@ -1,6 +1,8 @@
 export const services = [
   {
     id: 1,
+    heroImage: "",
+    sectionImage: "",
     name: "Accounting Service",
     subtitle:
       "Professional Accounting Services for Effective Financial Management",
@@ -9,6 +11,8 @@ export const services = [
   },
   {
     id: 2,
+    heroImage: "",
+    sectionImage: "",
     name: "Bookkeeping Service",
     subtitle: "Reliable Bookkeeping Services for Accurate Financial Records",
     description:
@@ -16,6 +20,8 @@ export const services = [
   },
   {
     id: 3,
+    heroImage: "",
+    sectionImage: "",
     name: "Tax Services",
     subtitle: "Expert Tax Services for Efficient Tax Management",
     description:
@@ -23,6 +29,8 @@ export const services = [
   },
   {
     id: 4,
+    heroImage: "",
+    sectionImage: "",
     name: "Finance Services",
     subtitle: "Comprehensive Financial Services for Business Growth",
     description:
@@ -30,6 +38,8 @@ export const services = [
   },
   {
     id: 5,
+    heroImage: "",
+    sectionImage: "",
     name: "Team as a Service",
     subtitle: "Dedicated Team Services for Exclusive Financial Operations",
     description:
@@ -37,6 +47,8 @@ export const services = [
   },
   {
     id: 6,
+    heroImage: "",
+    sectionImage: "",
     name: "Consultation & Advisory",
     subtitle: "Strategic Consultation Services for Informed Business Decisions",
     description:
