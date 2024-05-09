@@ -116,24 +116,56 @@ const Header = () => {
 
         <Menu
           size={24}
-          className={`lg:hidden ${isTop ? "text-white" : "text-black"}`}
+          className={`lg:hidden ${
+            isTop && isLandingPage ? "text-white" : "text-black"
+          }`}
           onClick={() => setShowMobileNav(!showMobileNav)}
         />
       </header>
       <nav
-        className={`bg-white shadow-xl z-10 fixed justify-center transition-transform duration-200 items-center w-screen pt-24 lg:pt-0 pb-6 ${
+        className={`${
+          isTop && isLandingPage ? "bg-blue-600" : "bg-white"
+        } shadow-xl z-10 fixed justify-center transition-transform duration-200 items-center w-screen pt-24 lg:pt-0 pb-6 ${
           showMobileNav ? "flex flex-col" : "-translate-y-full"
         } ease-in-out`}
       >
         {links.map((link, index) => (
-          <Link
-            key={index}
-            onClick={handleLinkClick}
-            href={link.path}
-            className="hover:text-blue-800"
-          >
-            {link.name}
-          </Link>
+          <div key={index} className="relative group">
+            <Link
+              href={link.path}
+              className={`flex items-center ${
+                isTop && isLandingPage
+                  ? "text-white hover:text-blue-100"
+                  : "hover:text-blue-800"
+              }`}
+            >
+              {link.name}
+              {link.name === "Services" && <ChevronDown size={16} />}
+            </Link>
+            {link.dropdown && (
+              <div
+                className={`absolute left-0 mt-2 w-48 rounded-md shadow-lg py-1 ${
+                  isTop && isLandingPage
+                    ? "bg-[rgba(37,99,235,0.8)]"
+                    : "bg-white"
+                }  ring-2 ring-black ring-opacity-5 transition ease-in-out duration-150 opacity-0 group-hover:opacity-100 z-50`}
+              >
+                {link.dropdown.map((dropdownLink, index) => (
+                  <Link
+                    key={index}
+                    href={dropdownLink.path}
+                    className={`block px-4 py-2 text-sm ${
+                      isTop && isLandingPage
+                        ? "text-white hover:bg-blue-400"
+                        : "text-black hover:bg-gray-100"
+                    } `}
+                  >
+                    {dropdownLink.name}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         ))}
       </nav>
     </>
