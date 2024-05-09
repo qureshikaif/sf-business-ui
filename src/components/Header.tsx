@@ -59,7 +59,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`fixed w-full h-20 flex justify-center p-5 items-center z-50 transition-all duration-200 ease-in-out ${
+        className={`fixed w-full h-20 flex lg:justify-center justify-between px-3 lg:p-5 items-center z-50 transition-all duration-200 ease-in-out ${
           showNav ? "" : "-translate-y-full"
         } ${
           isTop && isLandingPage
@@ -67,7 +67,7 @@ const Header = () => {
             : "bg-white shadow-md"
         }`}
       >
-        <div className="w-5/6 flex items-center justify-between">
+        <div className="lg:w-5/6 flex items-center justify-between">
           <Link href={"/"} className="flex items-center">
             <Image
               className="object-contain size-14"
@@ -75,7 +75,7 @@ const Header = () => {
               alt="SF Business Solutions"
             />
             <h1
-              className={`text-lg font-bold ${
+              className={`px-3 lg:px-0 text-lg font-bold ${
                 isTop && isLandingPage ? "text-white" : "text-blue-600"
               }`}
             >
@@ -116,7 +116,7 @@ const Header = () => {
 
         <Menu
           size={24}
-          className="lg:hidden"
+          className={`lg:hidden ${isTop ? "text-white" : "text-black"}`}
           onClick={() => setShowMobileNav(!showMobileNav)}
         />
       </header>
