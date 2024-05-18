@@ -8,6 +8,18 @@ const projects = [
     imageUrl: "https://via.placeholder.com/150",
     url: "https://example.com/project-a",
   },
+  {
+    title: "Project B",
+    description: "A brief description of Project B.",
+    imageUrl: "https://via.placeholder.com/150",
+    url: "https://example.com/project-a",
+  },
+  {
+    title: "Project C",
+    description: "A brief description of Project C.",
+    imageUrl: "https://via.placeholder.com/150",
+    url: "https://example.com/project-a",
+  },
 ];
 
 const OurWorkSection = () => {

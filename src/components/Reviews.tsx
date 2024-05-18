@@ -10,6 +10,46 @@ const reviews = [
     logo: "https://via.placeholder.com/50",
     url: "https://example.com",
   },
+  {
+    id: 2,
+    company: "Company B",
+    review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    rating: 4,
+    logo: "https://via.placeholder.com/50",
+    url: "https://example.com",
+  },
+  {
+    id: 3,
+    company: "Company C",
+    review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    rating: 3,
+    logo: "https://via.placeholder.com/50",
+    url: "https://example.com",
+  },
+  {
+    id: 4,
+    company: "Company D",
+    review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    rating: 5,
+    logo: "https://via.placeholder.com/50",
+    url: "https://example.com",
+  },
+  {
+    id: 5,
+    company: "Company E",
+    review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    rating: 4,
+    logo: "https://via.placeholder.com/50",
+    url: "https://example.com",
+  },
+  {
+    id: 6,
+    company: "Company F",
+    review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    rating: 5,
+    logo: "https://via.placeholder.com/50",
+    url: "https://example.com",
+  },
 ];
 
 const ReviewsSection = () => {
