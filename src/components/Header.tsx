@@ -97,16 +97,18 @@ const Header = () => {
                   {link.name === "Services" && <ChevronDown size={16} />}
                 </Link>
                 {link.dropdown && (
-                  <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 transition ease-in-out duration-150 opacity-0 group-hover:opacity-100 z-50">
-                    {link.dropdown.map((dropdownLink, index) => (
-                      <Link
-                        key={index}
-                        href={dropdownLink.path}
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      >
-                        {dropdownLink.name}
-                      </Link>
-                    ))}
+                  <div className="pt-3">
+                    <div className="absolute left-0 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 transition ease-in-out duration-150 opacity-0 group-hover:opacity-100 z-50 pointer-events-none group-hover:pointer-events-auto">
+                      {link.dropdown.map((dropdownLink, index) => (
+                        <Link
+                          key={index}
+                          href={dropdownLink.path}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          {dropdownLink.name}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
@@ -148,7 +150,7 @@ const Header = () => {
                   isTop && isLandingPage
                     ? "bg-[rgba(37,99,235,0.8)]"
                     : "bg-white"
-                }  ring-2 ring-black ring-opacity-5 transition ease-in-out duration-150 opacity-0 group-hover:opacity-100 z-50`}
+                }  ring-2 ring-black ring-opacity-5 transition ease-in-out duration-150 opacity-0 group-hover:opacity-100 z-50 pointer-events-none group-hover:pointer-events-auto`}
               >
                 {link.dropdown.map((dropdownLink, index) => (
                   <Link
