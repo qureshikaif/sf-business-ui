@@ -55,7 +55,7 @@ const FeaturedServices = () => {
   return (
     <section className="flex flex-col items-center lg:min-h-[100vh] py-10 justify-center">
       <div className="lg:w-10/12 w-11/12 px-2">
-        <h1 className="font-medium text-blue-600 text-5xl mb-20 text-center">
+        <h1 className="font-semibold text-blue-600 text-3xl mb-20 text-center">
           Featured Services
         </h1>
         <div className="flex flex-col lg:flex-row lg:space-x-20 items-center">

@@ -19,7 +19,7 @@ const links = [
     path: "#",
     dropdown: services.map((service) => ({
       name: service.name,
-      path: `/services/${service.id}`,
+      path: `/services/${service.link}`,
     })),
   },
   {

@@ -8,9 +8,10 @@ import { serviceType } from "@/types/service";
 
 const Service = () => {
   const params = useParams();
-  const id = params.id;
-  const selectedService = services.find(
-    (service) => service.id === parseInt(id as string)
+  const moreservices = services.flatMap((service) => service.moreservices);
+  const serviceLink = params.service;
+  const selectedService = moreservices.find(
+    (service) => service.link === serviceLink
   );
   return (
     <div className="overflow-hidden">
