@@ -51,7 +51,7 @@ const accordion = [
 
 const OurServices = ({ service }: ServicesProps) => {
   return (
-    <section className="overflow-hidden flex flex-col items-center py-40 lg:min-h-[110vh]">
+    <section className="overflow-hidden flex flex-col items-center py-14 lg:min-h-[110vh]">
       <div className="lg:w-10/12 w-11/12 px-2 py-5 h-1/2">
         <div className="flex flex-col space-y-3">
           <h1 className="font-bold text-blue-600">{service.name}</h1>
