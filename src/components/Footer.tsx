@@ -1,14 +1,14 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import { SocialIcon } from "react-social-icons";
 import LogoPNG from "../../public/logo-white.png";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
-import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
   return (
     <>
-      <footer className="w-full bg-blue-800 flex flex-col items-center px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
+      <footer className="w-full bg-blue-800 flex flex-col items-center px-4 sm:px-6 md:px-8 lg:px-16 xl:px-32 2xl:px-64 py-10">
         <div className="w-full py-10">
           <div className="py-5">
             <Link href={"/"} className="flex items-center">
@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
             <div className="w-full md:w-1/4 flex flex-col mt-10 md:mt-0 lg:items-center">
               <div className="flex flex-col space-y-3">
-                <h1 className="font-semibold">Contact</h1>
+              <h1 className="font-semibold text-xl">Contact</h1>
                 <Link href="/" className="hover:underline underline-offset-4">
                   Karachi, Pakistan
                 </Link>
@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
             <div className="w-full md:w-1/3 flex flex-col mt-10 md:mt-0 lg:items-center">
               <div className="flex flex-col space-y-3">
-                <h1 className="font-semibold">Services</h1>
+                <h1 className="font-semibold text-xl">Services</h1>
                 <Link href="/" className="hover:underline underline-offset-4">
                   Custom Software Development
                 </Link>
@@ -70,7 +70,7 @@ const Footer = () => {
             </div>
             <div className="w-full md:w-1/4 flex flex-col mt-10 md:mt-0 lg:items-center">
               <div className="flex flex-col space-y-3">
-                <h1 className="font-semibold">Company</h1>
+                <h1 className="font-semibold text-xl">Company</h1>
                 <Link href="/" className="hover:underline underline-offset-4">
                   About us
                 </Link>
@@ -104,7 +104,7 @@ const Footer = () => {
               className="border-white border rounded-full hover:bg-gradient-to-t from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]"
             />
             <SocialIcon
-              url="https://behance.com"
+              url="https://upwork.com"
               bgColor="transparent"
               className="border-white border rounded-full hover:bg-blue-300"
             />

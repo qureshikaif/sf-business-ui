@@ -3,7 +3,7 @@ export const services = [
     id: 1,
     heroImage: "",
     sectionImage: "",
-    name: "Accounting Service",
+    name: "Accounting / Bookkeeping",
     subtitle:
       "Professional Accounting Services for Effective Financial Management",
     description:
@@ -13,10 +13,10 @@ export const services = [
     id: 2,
     heroImage: "",
     sectionImage: "",
-    name: "Bookkeeping Service",
-    subtitle: "Reliable Bookkeeping Services for Accurate Financial Records",
+    name: "Payroll",
+    subtitle: "Reliable Payroll Services for Accurate Employee Management",
     description:
-      "Keep your financial records in order with our reliable bookkeeping services. We handle all aspects of bookkeeping, allowing you to focus on running your business. Our services include recording transactions, reconciling bank statements, and preparing financial statements.",
+      "Streamline your payroll process with our dependable payroll services. We specialize in managing every aspect of payroll, ensuring your employees are paid accurately and on time. Our services include calculating paychecks, managing tax withholdings, processing direct deposits, and preparing year-end tax forms. Let us handle the complexities of payroll, allowing you to focus on growing your business.",
   },
   {
     id: 3,

@@ -1,26 +1,18 @@
 "use client";
-import { useState, useLayoutEffect } from "react";
-import Link from "next/link";
-import Logo from "../../public/logo.png";
-import LogoWhite from "../../public/logo-white.png";
-import Image from "next/image";
 import useScroll from "@/hooks/useScroll";
-import { ChevronDown, Menu } from "lucide-react";
-import { usePathname } from "next/navigation";
 import { services } from "@/placeholders/Services";
+import { ChevronDown, Menu } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useLayoutEffect, useState } from "react";
+import LogoWhite from "../../public/logo-white.png";
+import Logo from "../../public/logo.png";
 
 const links = [
   {
     name: "Home",
     path: "/",
-  },
-  {
-    name: "About Us",
-    path: "/about",
-  },
-  {
-    name: "Contact Us",
-    path: "/contact",
   },
   {
     name: "Services",
@@ -31,8 +23,16 @@ const links = [
     })),
   },
   {
+    name: "About Us",
+    path: "/about",
+  },
+  {
     name: "Who we serve",
     path: "/clients",
+  },
+  {
+    name: "Contact Us",
+    path: "/contact",
   },
 ];
 
