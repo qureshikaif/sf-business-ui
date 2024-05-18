@@ -22,7 +22,7 @@ export const services = [
     id: 3,
     heroImage: "",
     sectionImage: "",
-    name: "Tax Services",
+    name: "Taxing",
     subtitle: "Expert Tax Services for Efficient Tax Management",
     description:
       "Navigating the complexities of taxes can be challenging. Our expert tax services are here to help. We offer tax planning, preparation, and filing services to keep your business compliant. Our tax professionals stay updated on the latest tax laws to ensure you take advantage of all applicable tax benefits.",
@@ -31,7 +31,7 @@ export const services = [
     id: 4,
     heroImage: "",
     sectionImage: "",
-    name: "Finance Services",
+    name: "Financing",
     subtitle: "Comprehensive Financial Services for Business Growth",
     description:
       "Our financial services go beyond basic accounting and bookkeeping. We offer financial planning, budgeting, and forecasting services to help your business grow. Our financial experts work closely with you to understand your business goals and develop a financial strategy that aligns with them.",

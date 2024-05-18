@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
             <div className="w-full md:w-1/4 flex flex-col mt-10 md:mt-0 lg:items-center">
               <div className="flex flex-col space-y-3">
-              <h1 className="font-semibold text-xl">Contact</h1>
+                <h1 className="font-semibold text-xl">Contact</h1>
                 <Link href="/" className="hover:underline underline-offset-4">
                   Karachi, Pakistan
                 </Link>
@@ -106,7 +106,7 @@ const Footer = () => {
             <SocialIcon
               url="https://upwork.com"
               bgColor="transparent"
-              className="border-white border rounded-full hover:bg-blue-300"
+              className="border-white border rounded-full hover:bg-[#6fda44]"
             />
             <SocialIcon
               url="https://linkedin.com"
