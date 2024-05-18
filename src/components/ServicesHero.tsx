@@ -17,7 +17,7 @@ const ServicesHero = ({ service }: ServicesProps) => {
           </div>
         </div>
       </div>
-      <div className="lg:w-1/2 w-screen h-screen lg:pt-20 hidden lg:block">
+      <div className="lg:w-1/2 w-screen h-full pt-2 object-contain hidden lg:block">
         <Image src={ServicesHeroImage} alt="Services Hero Section Image" />
       </div>
     </section>
