@@ -202,7 +202,7 @@ export const services = [
     id: 4,
     heroImage: "",
     sectionImage: "",
-    name: "Financing",
+    name: "Finance",
     link: "financing",
     subtitle: "Comprehensive Financial Services for Business Growth",
     description:
