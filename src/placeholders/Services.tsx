@@ -136,7 +136,7 @@ export const services = [
     id: 3,
     heroImage: "",
     sectionImage: "",
-    name: "Taxing",
+    name: "Tax",
     link: "taxing",
     subtitle: "Expert Tax Services for Efficient Tax Management",
     description:
