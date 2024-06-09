@@ -1,9 +1,8 @@
 "use client";
-import React from "react";
-import { ShoppingCart } from "lucide-react";
-import { Card, CardHeader, CardContent, CardTitle } from "./ui/card";
 import { ExpertiseCard } from "@/placeholders/ExpertiseCard";
+import { ShoppingCart } from "lucide-react";
 import { Parallax } from "react-scroll-parallax";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 const OurExpertise = () => {
   return (
@@ -22,13 +21,13 @@ const OurExpertise = () => {
         <div className="flex flex-col space-y-3">
           <h1 className="font-bold text-blue-200">Our Area Of Expertise</h1>
           <p className="text-3xl text-white font-semibold">
-            Shaping diverse markets with game-changing tech & AI
+            Shaping diverse markets with game-changing financial solutions
           </p>
           <p className="text-white font-medium z-10">
-            The post-digital age shows no signs of slowing down. There’s a
-            pressing need for a move to the digital, no matter which industry
-            you belong to. At VentureDive, we work across a wide range of
-            industries:
+            In today&apos;s fast-paced financial landscape, there&apos;s a
+            pressing need for innovative and reliable financial services across
+            various industries. At SF Business Solutions, we excel in providing
+            customized solutions to meet these evolving demands:
           </p>
         </div>
         <div className="h-14 lg:h-20"></div>

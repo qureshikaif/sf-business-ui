@@ -1,54 +1,31 @@
-import { Card, CardContent } from "./ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
-} from "./ui/carousel";
-
 const AtGlance = () => {
   return (
-    <section className="h-[120vh] pt-20 lg:pt-0 overflow-hidden flex flex-col items-center justify-center">
+    <section className="pt-32 overflow-hidden flex flex-col items-center justify-center">
       <div className="w-11/12 lg:w-10/12 px-2">
         <div className="flex flex-col space-y-3">
           <h1 className="font-semibold text-3xl text-blue-600">
             SF Business at glance.
           </h1>
           <p className="text-lg font-light">
-            We are a top-rated technology solutions company, laser-focused on
-            delivering the promise on technology and human ingenuity. Our
-            people, purpose and governance help us deliver excellence & build
-            lasting business partnerships.
+            At SF Business Solutions, we pride ourselves on being a premier
+            financial services firm with an unparalleled commitment to
+            excellence. Our expertise encompasses a broad spectrum of financial
+            services, ensuring that our clients receive the highest quality
+            services tailored to their unique needs.
+          </p>
+          <p className="text-lg font-light">
+            With a rich history of success, we combine deep industry knowledge
+            with innovative strategies to deliver outstanding results. We
+            believe in building lasting partnerships with our clients.
+          </p>
+          <p className="text-lg font-light">
+            When you choose SF Business Solutions, you are choosing a partner
+            who will work tirelessly to ensure your financial success and peace
+            of mind. Experience the difference with SF Business Solutions –
+            where your success is our mission.
           </p>
         </div>
         <div className="h-20"></div>
-        <div className="flex items-center justify-center">
-          <Carousel
-            opts={{
-              align: "start",
-            }}
-            className="w-full"
-          >
-            <CarouselContent>
-              {Array.from({ length: 7 }).map((_, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1">
-                    <Card className="border-2 border-gray-400">
-                      <CardContent className="flex aspect-square items-center justify-center p-6">
-                        <span className="text-3xl font-semibold">
-                          {index + 1}
-                        </span>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="hidden lg:block" />
-            <CarouselNext className="hidden lg:block" />
-          </Carousel>
-        </div>
       </div>
     </section>
   );

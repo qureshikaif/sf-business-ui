@@ -1,14 +1,13 @@
-import React from "react";
-import { Card, CardContent } from "./ui/card";
+import Image from "next/image";
 import Five from "../../public/images/one.jpg";
+import { Card, CardContent } from "./ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
   CarouselNext,
+  CarouselPrevious,
 } from "./ui/carousel";
-import Image from "next/image";
 
 const OurCommitments = () => {
   return (
@@ -53,6 +52,32 @@ const OurCommitments = () => {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
+        <div className="flex items-center justify-center">
+          <Carousel
+            opts={{
+              align: "start",
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {Array.from({ length: 7 }).map((_, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1">
+                    <Card className="border-2 border-gray-400">
+                      <CardContent className="flex aspect-square items-center justify-center p-6">
+                        <span className="text-3xl font-semibold">
+                          {index + 1}
+                        </span>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden lg:block" />
+            <CarouselNext className="hidden lg:block" />
+          </Carousel>
+        </div>
       </div>
     </section>
   );

@@ -1,38 +1,38 @@
 export const WhyUsCard = [
   {
     icon: "star",
-    title: "Strong Governance",
+    title: "Excellence in Financial Services",
     description:
-      "We ensure strong governance through weekly performance evaluation, fortnightly sync with clients, monthly SteerCo with stakeholders from both parties using Agile Governance to “create Value”.",
+      "At SF Business Solutions, our team brings an unmatched level of expertise in accounting, tax planning, financial advisory, and strategic business consulting. We combine years of industry experience with innovative approaches to ensure your financial success.",
   },
   {
     icon: "lightbulb",
-    title: "Efficient Engagement & Team Management",
+    title: "Client-Centered Approach",
     description:
-      "We have assigned dedicated project and delivery managers to each engagement to provide oversight, take regular pulse, unlock both parties to increase throughput & deliver value.",
+      "Our service is built around you. We focus on understanding your specific financial needs and challenges, offering personalized strategies that drive optimal results. Your goals become our mission, and we work tirelessly to achieve them.",
   },
   {
     icon: "sliders-h",
-    title: "Agile Scope Management",
+    title: "Adaptive and Innovative Solutions",
     description:
-      "Using the latest methodologies of scope management, mainly Business Value-Oriented Principles, we work to increase productivity, reduce wastes, & improve people’s motivation to evolve the scope.",
+      "In today’s fast-paced financial environment, flexibility is crucial. We employ the latest technologies and innovative practices to provide solutions that are not only effective but also adaptive to the ever-changing financial landscape.",
   },
   {
     icon: "cogs",
-    title: "Regular Service Improvement",
+    title: "Commitment to Improvement",
     description:
-      "Our team of experts ensure continuous improvement in the process-base to maximize effectiveness using empirical business agility principles to maximize efficiency & ROI for customers.",
+      "We believe that there is always room for improvement. Our team continually evaluates and enhances our services, ensuring that we deliver the most efficient and effective financial solutions. This commitment to excellence drives us to stay ahead of the curve.",
   },
-  {
-    icon: "",
+  { 
+    icon: "heart",
     title: "Guaranteed Customer Success",
     description:
-      "Using continuous, iterative, incremental improvements &amp; creating collaboration b/w Engineering, Service Delivery &amp; Success Management teams, we aim to deliver better outcomes aligned with customer's goals.",
+      "Your success is our success. We are dedicated to providing comprehensive support and strategic advice that ensures your business thrives. From meticulous financial planning to strategic advisory, we are with you every step of the way.",
   },
   {
     icon: "shield-alt",
-    title: "Top-rated Security & Risk Management",
+    title: "Robust Security Measures",
     description:
-      "We follow mutually agreed security protocols, identify risks & implement strategies to protect confidentiality, integrity, access control of project resources, IP & privacy.",
+      "Your financial security is our top priority. We implement stringent security protocols and proactive risk management strategies to protect your financial data and operations. Trust us to safeguard your business against potential risks.",
   },
 ];

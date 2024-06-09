@@ -16,7 +16,7 @@ const WhyUs = () => {
         <div className="flex flex-col space-y-3">
           <h1 className="font-bold text-blue-600">Why Us</h1>
           <p className="text-3xl font-semibold">
-            We offer best-in-class Service Delivery
+          We are Delivering Exceptional Financial Services
           </p>
         </div>
         <div className="h-16"></div>

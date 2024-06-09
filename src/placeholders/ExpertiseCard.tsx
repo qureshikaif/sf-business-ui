@@ -3,31 +3,31 @@ import { ShoppingCart } from "lucide-react";
 export const ExpertiseCard = [
   {
     icon: ShoppingCart,
-    title: "Custom Software Development",
+    title: "Custom Accounting Solutions",
     route: "/",
   },
   {
     icon: "",
-    title: "Fintech Apps & Products",
+    title: "Comprehensive Tax Planning & Compliance",
     route: "/",
   },
   {
     icons: "",
-    title: "Healthcare IT & mHealth Solutions",
+    title: "Financial Advisory & Consulting",
   },
   {
     icon: "",
-    title: "Web 3.0 & Emerging Tech",
+    title: "Strategic Business Planning",
     route: "/",
   },
   {
     icon: "",
-    title: "Mobility & Logistics",
+    title: "Audit & Assurance Services",
     route: "/",
   },
   {
     icon: "",
-    title: "On-Demand Services",
+    title: "Payroll & HR Management",
     route: "/",
   },
 ];
