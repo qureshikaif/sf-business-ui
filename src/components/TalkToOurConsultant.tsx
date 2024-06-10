@@ -1,6 +1,5 @@
-import React from "react";
-import { Button } from "./ui/button";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 const TalkToOurConsultant = () => {
   return (
@@ -10,8 +9,8 @@ const TalkToOurConsultant = () => {
           Unsure which service would benefit you more?
         </h1>
         <p className="text-white">
-          Book a 15-minute call with our consultant to engage and learn how we
-          can help.
+          Book a free 1-hour consultation and diagnostic of your financials with
+          our expert consultant.
         </p>
         <Link href="/contact">
           <Button className="bg-white text-black hover:bg-blue-600 hover:text-white">

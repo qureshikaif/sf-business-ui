@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "./ui/button";
+import TalkToOurConsultant from "./TalkToOurConsultant";
 
 const reviews = [
   {
@@ -89,9 +89,7 @@ const ReviewsSection = () => {
           </div>
         </div>
       </section>
-      <div className="flex items-center justify-center py-10">
-        <Button className="bg-blue-500">Book a consultation</Button>
-      </div>
+      <TalkToOurConsultant />
     </>
   );
 };
