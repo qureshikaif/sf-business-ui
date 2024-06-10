@@ -31,7 +31,7 @@ const Footer = () => {
                 clients extract 360° value from business.
               </p>
               <Button className="border" variant={"ghost"}>
-                Let&apos;s get to work
+                Book a consultant
               </Button>
             </div>
             <div className="w-full md:w-1/4 flex flex-col mt-10 md:mt-0 lg:items-center">

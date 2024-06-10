@@ -1,7 +1,5 @@
 import { BarChart4 } from "lucide-react";
 import { Button } from "./ui/button";
-import HomeHeroImage from "@/../public/images/home-hero.png";
-import Image from "next/image";
 
 const HomeHero = () => {
   return (
@@ -10,11 +8,11 @@ const HomeHero = () => {
         <div className="space-y-3 lg:space-y-8">
           <div className="space-y-3 lg:space-y-10 lg:mt-10">
             <h1 className="lg:text-6xl text-3xl font-semibold leading-normal text-white">
-              Dynamic solutions that power high-growth startups
+              Excel in what you are best at - Leave the Financials to Us.
             </h1>
             <p className="text-white">
-              Create lasting products that can help you grow into a
-              billion-dollar empire and beyond.
+              Empowering your business growth by managing your books and
+              finances with expert care.
             </p>
             <div className="space-x-3">
               <Button className="font-normal border-white border bg-transparent text-white">
