@@ -8,8 +8,8 @@ const ContactHero = () => {
           <h1 className="text-blue-700 font-medium">Let&apos;s Connect</h1>
           <div className="space-y-4">
             <p className="text-3xl leading-10 font-medium">
-              Get in touch to build scalable digital solutions. In weeks, not
-              months.
+              Get in touch to streamline your financial operations. Get
+              Complimentary consultation.
             </p>
 
             <div className="h-full flex space-x-5">

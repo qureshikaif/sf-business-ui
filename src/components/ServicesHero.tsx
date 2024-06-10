@@ -12,7 +12,7 @@ const ServicesHero = ({ service }: ServicesProps) => {
             <h1 className="text-3xl leading-10 font-medium">{service.name}</h1>
             <p>{service.subtitle}</p>
             <Button className="font-normal bg-blue-700">
-              Discuss your project idea
+              Book a consultation
             </Button>
           </div>
         </div>

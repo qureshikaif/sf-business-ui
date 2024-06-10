@@ -21,7 +21,7 @@ export const WhyUsCard = [
     icon: "cogs",
     title: "Commitment to Improvement",
     description:
-      "We believe that there is always room for improvement. Our team continually evaluates and enhances our services, ensuring that we deliver the most efficient and effective financial solutions. This commitment to excellence drives us to stay ahead of the curve.",
+      "We believe that there is always room for improvement. Our team continually evaluates and enhances our services, ensuring that we deliver the most efficient and effective financial management. This commitment to excellence drives us to stay ahead of the curve.",
   },
   { 
     icon: "heart",

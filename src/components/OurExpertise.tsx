@@ -21,7 +21,7 @@ const OurExpertise = () => {
         <div className="flex flex-col space-y-3">
           <h1 className="font-bold text-blue-200">Our Area Of Expertise</h1>
           <p className="text-3xl text-white font-semibold">
-            Shaping diverse markets with game-changing financial solutions
+            Shaping diverse markets with game-changing financial management
           </p>
           <p className="text-white font-medium z-10">
             In today&apos;s fast-paced financial landscape, there&apos;s a

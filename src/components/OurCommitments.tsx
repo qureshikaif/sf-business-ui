@@ -14,7 +14,7 @@ const OurCommitments = () => {
     <section className="h-screen overflow-hidden flex flex-col items-center justify-center">
       <div className="lg:w-10/12 w-11/12 px-2 py-5 h-3/4">
         <div className="flex flex-col space-y-3">
-          <h1 className="font-bold text-blue-600">Our Commitments</h1>
+          <h1 className="font-bold text-blue-600">Our Clients</h1>
           <p className="text-3xl font-semibold">
             Initiatives that help communities thrive
           </p>
@@ -52,32 +52,6 @@ const OurCommitments = () => {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
-        <div className="flex items-center justify-center">
-          <Carousel
-            opts={{
-              align: "start",
-            }}
-            className="w-full"
-          >
-            <CarouselContent>
-              {Array.from({ length: 7 }).map((_, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <div className="p-1">
-                    <Card className="border-2 border-gray-400">
-                      <CardContent className="flex aspect-square items-center justify-center p-6">
-                        <span className="text-3xl font-semibold">
-                          {index + 1}
-                        </span>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="hidden lg:block" />
-            <CarouselNext className="hidden lg:block" />
-          </Carousel>
-        </div>
       </div>
     </section>
   );

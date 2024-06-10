@@ -1,17 +1,17 @@
 import { useForm } from "react-hook-form";
 import { Button } from "./ui/button";
+import { Checkbox } from "./ui/checkbox";
 import {
   Form,
-  FormField,
-  FormLabel,
   FormControl,
   FormDescription,
+  FormField,
+  FormLabel,
   FormMessage,
 } from "./ui/form";
-import { Textarea } from "./ui/textarea";
 import { Input } from "./ui/input";
-import { Checkbox } from "./ui/checkbox";
 import { Label } from "./ui/label";
+import { Textarea } from "./ui/textarea";
 
 const ContactFormSection = () => {
   const form = useForm();
@@ -20,10 +20,10 @@ const ContactFormSection = () => {
       <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
         <div className="w-11/12 px-2 lg:w-3/4 space-y-6 pt-20 md:py-10 lg:px-10 ">
           <h4 className="text-blue-700 font-medium">
-            Tell us about your project
+            Tell us about your financial needs.
           </h4>
           <h1 className="text-3xl leading-10">
-            What&apos;s your immediate business goal?
+            What&apos;s your immediate Financial goal?
           </h1>
           <div className="space-y-4 py-4">
             <div className="flex items-center space-x-2">
@@ -33,7 +33,7 @@ const ContactFormSection = () => {
                 checked
               />
               <Label htmlFor="digitalTransformation">
-                Digital Transformation / BPO
+                Get Your Books in Order or Up to Date
               </Label>
             </div>
             <div className="flex items-center space-x-2">
@@ -43,7 +43,7 @@ const ContactFormSection = () => {
                 checked
               />
               <Label htmlFor="moderniseSystems">
-                Modernise Legacy Systems & Technology
+                Achieve Financial Stability and Growth
               </Label>
             </div>
             <div className="flex items-center space-x-2">
@@ -53,7 +53,7 @@ const ContactFormSection = () => {
                 checked
               />
               <Label htmlFor="developApps">
-                Develop Robust Apps & Products
+                Enhance Operational Efficiency
               </Label>
             </div>
             <div className="flex items-center space-x-2">
@@ -62,9 +62,7 @@ const ContactFormSection = () => {
                 className="w-7 h-7 rounded-full"
                 checked
               />
-              <Label htmlFor="unlockValue">
-                Unlock Value With Data & Analytics
-              </Label>
+              <Label htmlFor="unlockValue">Maximize Tax Benefits</Label>
             </div>
             <div className="flex items-center space-x-2">
               <Checkbox
@@ -72,8 +70,16 @@ const ContactFormSection = () => {
                 className="w-7 h-7 rounded-full"
                 checked
               />
-              <Label htmlFor="scaleTeams">
-                Scale or Build In-house Tech Teams
+              <Label htmlFor="scaleTeams">Strengthen Financial Health</Label>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Checkbox
+                id="createExperiences"
+                className="w-7 h-7 rounded-full"
+                checked
+              />
+              <Label htmlFor="createExperiences">
+                Ensure Regulatory Compliance
               </Label>
             </div>
             <div className="flex items-center space-x-2">
@@ -83,7 +89,7 @@ const ContactFormSection = () => {
                 checked
               />
               <Label htmlFor="createExperiences">
-                Create Stunning Digital Experiences
+                Strategic Financial Planning
               </Label>
             </div>
           </div>

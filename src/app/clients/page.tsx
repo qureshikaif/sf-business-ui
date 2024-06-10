@@ -1,4 +1,4 @@
-import ClientsCarousel from "@/components/ClientCarousel";
+import AtGlance from "@/components/AtGlance";
 import ClientsSection from "@/components/Clients";
 import OurWorkSection from "@/components/OurWork";
 import ReviewsSection from "@/components/Reviews";
@@ -8,7 +8,8 @@ const whoWeServe = () => {
     <>
       <br />
       <br />
-      <ClientsCarousel />
+      {/* <ClientsCarousel /> */}
+      <AtGlance />
       <ClientsSection />
       <OurWorkSection />
       <ReviewsSection />
